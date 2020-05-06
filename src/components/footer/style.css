@@ -1,0 +1,20 @@
+#footer{
+    
+    background-color:#ccff33;
+    padding: 3px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.img-footer{
+    margin-top: 10px;
+}
+
+.text-footer{
+    margin-top: -40px;
+    margin-right: 10px;
+    font-size: 0.7em;
+    text-decoration: black;
+    text-align: end;
+    flex: end;
+}

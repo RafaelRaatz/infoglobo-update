@@ -1,0 +1,36 @@
+.fourth-news{
+    display: flex;
+}
+
+.fourth-news article{
+    
+    margin-right:40px;
+
+}
+
+.fourth-news .fourth-label{ 
+    text-transform:uppercase;
+    color:blue;
+    font-weight:bold;
+    font-size: 0.6em;
+}
+
+.fourth-news .fourth-title{
+    
+    font-size:1.1em;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color:black;
+}
+    
+.fourth-news .fourth-description{
+    font-size: 0.9em;
+    line-height: 17px;
+    color: black; 
+    padding-bottom: 20px; 
+}
+
+.fourth-news .fourth-news-thumb{
+
+    margin-top: 2px;   
+}

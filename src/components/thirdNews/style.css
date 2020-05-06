@@ -1,0 +1,32 @@
+.third-news {     
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.third-news article{
+   
+    margin-right:40px;
+    
+}
+
+.third-news .third-label{
+    
+    text-transform:uppercase;
+    color:blue;
+    font-weight:bold;
+    font-size: 0.6em;;
+}
+
+.third-news .third-title{
+
+    font-size:1.1em;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color:black;
+}
+    
+.third-news .third-description{
+    font-size: 0.9em;
+    line-height: 17px;
+    color: black; 
+}

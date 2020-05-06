@@ -1,0 +1,41 @@
+.second-news{
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.first-article{
+    margin-right: 80px;
+}
+
+.second-news .second-label{
+    
+    text-transform:uppercase;
+    color:blue;
+    font-weight:bold;
+    font-size: 0.6em;
+    
+}
+
+
+.second-news .second-title{
+    
+    font-size:1.1em;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color:black;
+}
+
+.second-news .second-description{
+    font-size: 0.9em;
+    line-height: 17px;
+    color: black;
+}
+
+.second-news .second-news-thumb{
+
+    margin-right: 8px;
+    
+    
+}

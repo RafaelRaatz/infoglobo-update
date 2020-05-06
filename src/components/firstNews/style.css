@@ -1,0 +1,59 @@
+.news{  
+    margin-bottom:32px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.news article{
+
+    margin-right:60px;
+    position: relative;
+}
+
+.news-description{
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    padding: 0 20px
+}
+
+.news .label{
+    text-transform:uppercase;
+    color:blue;
+    font-weight:bold;
+    font-size: 0.6em;
+
+}
+
+.news .title{
+    font-size:1.1em;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.news .description{
+    font-size: 0.9em;
+    line-height: 17px;
+    color: #fff;
+
+}
+
+.news .overlay{
+    background-color: rgba(0,0,0,0.58);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 99%;
+}
+
+.news .news-thumb{
+    position: relative; 
+    margin-top: 20px;
+}

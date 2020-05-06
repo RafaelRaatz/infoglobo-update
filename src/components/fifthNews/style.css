@@ -1,0 +1,40 @@
+.fifth-news {
+    display: flex;
+}
+
+.fifth-news article{
+    margin-right:40px;
+    position: relative;
+}
+
+
+.fifth-news .fifth-label{
+    
+    text-transform:uppercase;
+    color:blue;
+    font-weight:bold;
+    font-size: 0.6em;
+}
+
+.fifth-news .fifth-title{
+    
+    font-size:1.1em;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color:black;
+}
+    
+
+.fifth-news .fifth-description{
+    font-size: 0.9em;
+    line-height: 17px;
+    color: black;
+    padding-bottom: 20px; 
+
+}
+
+.fifth-news .fifth-news-thumb{
+    
+    margin-top: 2px;
+    
+}
