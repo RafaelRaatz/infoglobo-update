@@ -4,7 +4,7 @@ import logo from '../../media/logo.png'
 import '../../global.css'
 
 
-function Header() {
+const Header = () => {
     return (
 
         <header>

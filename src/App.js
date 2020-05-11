@@ -12,7 +12,7 @@ import Footer from './components/footer'
 import SectionTitle from './components/sectionTitle'
 import SectionFinalText from './components/sectionFinalText'
 
-function App() {
+const App = () => {
   return (
 
     <div>

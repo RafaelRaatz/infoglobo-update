@@ -8,7 +8,7 @@ import firstNewsSecondThumb from '../../media/noticia-2.jpeg'
 
 
 
-function FirstNews() {
+const FirstNews = () => {
     return (
         <div className="container">
             <div className="news">

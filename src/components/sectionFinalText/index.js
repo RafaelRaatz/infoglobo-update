@@ -2,7 +2,7 @@ import React from 'react';
 import '../../global.css'
 
 
-function SectionFinalText() {
+const SectionFinalText = () => {
     return (
 
         <div className="container">

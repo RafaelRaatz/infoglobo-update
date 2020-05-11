@@ -2,7 +2,7 @@ import React from 'react';
 import '../../global.css'
 
 
-function SectionTitle() {
+const SectionTitle = () => {
     return (
 
         <div className="container">

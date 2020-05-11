@@ -5,7 +5,7 @@ import '../../global.css'
 import secondNewsFirstThumb from '../../media/noticia-3.jpeg'
 import secondNewssecondThumb from '../../media/noticia-4.jpeg'
 
-function SecondNews() {
+const SecondNews = () => {
     return (
         <div className="container">
             <div className="second-news">

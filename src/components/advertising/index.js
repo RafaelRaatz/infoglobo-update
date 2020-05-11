@@ -5,7 +5,7 @@ import '../../global.css'
 import advertising from '../../media/propaganda.png'
 
 
-function Advertising() {
+const Advertising = () => {
     return (
 
         <div className="advertising">

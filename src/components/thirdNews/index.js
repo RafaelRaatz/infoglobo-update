@@ -7,7 +7,7 @@ import thirdNewsSecondThumb from '../../media/noticia-6.jpeg'
 import thirdNewsThirdThumb from '../../media/noticia-8.jpeg'
 import thirtNewsFourthThumb from '../../media/noticia-9.jpeg'
 
-function ThirdNews() {
+const ThirdNews = () => {
     return (
         <div className="container">
 

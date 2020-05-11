@@ -4,7 +4,7 @@ import '../../global.css'
 
 import logoFooter from '../../media/logo-footer.png'
 
-function Footer() {
+const Footer = () => {
     return (
 
         <div id="footer">
