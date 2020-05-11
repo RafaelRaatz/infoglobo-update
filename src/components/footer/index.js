@@ -9,9 +9,9 @@ function Footer() {
 
         <div id="footer">
 
-            <img class="img-footer" src={logoFooter} alt="" />
+            <img className="img-footer" src={logoFooter} alt="" />
 
-            <p class="text-footer"> COPYRIGHT &copy; 2017 <br />
+            <p className="text-footer"> COPYRIGHT &copy; 2017 <br />
         TODOS OS DIREITOS RESERVADOS
     </p>
 

@@ -10,31 +10,31 @@ import firstNewsSecondThumb from '../../media/noticia-2.jpeg'
 
 function FirstNews() {
     return (
-        <div class="container">
-            <div class="news">
+        <div className="container">
+            <div className="news">
                 <article>
-                    <div class="news-thumb">
+                    <div className="news-thumb">
                         <img src={firstNewsFirstThumb} alt="" />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                     </div>
-                    <div class="news-description">
-                        <span class="label">Esporte</span>
-                        <p class="title">Beisebol é um esporte para todos ?</p>
-                        <p class="description">Todo mundo sabe que futebol é muito melhor, mas estudos dizem <br /> que o
-                      beisebol é o pior. </p>
+                    <div className="news-description">
+                        <span className="label">Esporte</span>
+                        <p className="title">Beisebol é um esporte para todos ?</p>
+                        <p className="description">Todo mundo sabe que futebol é muito melhor, mas estudos dizem <br /> que o
+                        beisebol é o pior. </p>
                     </div>
                 </article>
 
                 <article>
-                    <div class="news-thumb">
+                    <div className="news-thumb">
                         <img src={firstNewsSecondThumb} alt="" />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                     </div>
-                    <div class="news-description">
-                        <span class="label">Moda</span>
-                        <p class="title">Desfile de moda já é moda</p>
-                        <p class="description">Todo mundo sabe que desfiles são tendencia na moda, palmeiras <br /> adota
-                      o novo costume. </p>
+                    <div className="news-description">
+                        <span className="label">Moda</span>
+                        <p className="title">Desfile de moda já é moda</p>
+                        <p className="description">Todo mundo sabe que desfiles são tendencia na moda, palmeiras <br /> adota
+                        o novo costume. </p>
                     </div>
                 </article>
 

@@ -19,7 +19,7 @@ function App() {
 
       <Header />
 
-      <section class="main">
+      <section className="main">
 
         <FirstNews />
 

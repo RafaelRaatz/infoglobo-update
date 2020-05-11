@@ -5,8 +5,8 @@ import '../../global.css'
 function SectionTitle() {
     return (
 
-        <div class="container">
-            <div class="section-title clearfix">Brasil</div>
+        <div className="container">
+            <div className="section-title clearfix">Brasil</div>
         </div>
 
 

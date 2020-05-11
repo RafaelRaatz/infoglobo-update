@@ -9,38 +9,38 @@ import thirtNewsFourthThumb from '../../media/noticia-9.jpeg'
 
 function ThirdNews() {
     return (
-        <div class="container">
+        <div className="container">
 
-            <div class="third-news ">
+            <div className="third-news ">
 
 
                 <article>
 
 
-                    <div class="third-news-thumb">
+                    <div className="third-news-thumb">
                         <img src={thirdNewsFirstThumb} alt="" />
 
                     </div>
 
-                    <div class="third-news-description">
-                        <span class="third-label">Educação</span>
-                        <p class="third-title">Jbo x Leda </p>
-                        <p class="third-description"> Qual a melhor escola da região <br /> de itapecerica da serra, de
+                    <div className="third-news-description">
+                        <span className="third-label">Educação</span>
+                        <p className="third-title">Jbo x Leda </p>
+                        <p className="third-description"> Qual a melhor escola da região <br /> de itapecerica da serra, de
                             sua <br />opinião. </p>
                     </div>
 
                 </article>
 
                 <article>
-                    <div class="third-news-thumb">
+                    <div className="third-news-thumb">
                         <img src={thirdNewsSecondThumb} alt="" />
 
                     </div>
 
-                    <div class="third-news-description">
-                        <span class="third-label">Esporte</span>
-                        <p class="third-title">Corridas velozes </p>
-                        <p class="third-description"> O esporte que mais cresceu no ano <br /> foi a corrida, o grande
+                    <div className="third-news-description">
+                        <span className="third-label">Esporte</span>
+                        <p className="third-title">Corridas velozes </p>
+                        <p className="third-description"> O esporte que mais cresceu no ano <br /> foi a corrida, o grande
                             responsavel <br />foi o jogador Mbappe. </p>
                     </div>
 
@@ -49,15 +49,15 @@ function ThirdNews() {
                 </article>
 
                 <article>
-                    <div class="third-news-thumb">
+                    <div className="third-news-thumb">
                         <img src={thirdNewsThirdThumb} alt="" />
 
                     </div>
 
-                    <div class="third-news-description">
-                        <span class="third-label">Globo rural</span>
-                        <p class="third-title">Porco não tem mundial </p>
-                        <p class="third-description"> Porco vai pra campeonato mundial <br /> mas não leva a melhor em
+                    <div className="third-news-description">
+                        <span className="third-label">Globo rural</span>
+                        <p className="third-title">Porco não tem mundial </p>
+                        <p className="third-description"> Porco vai pra campeonato mundial <br /> mas não leva a melhor em
                             disputa <br />e acaba ficando em segundo. </p>
                     </div>
 
@@ -65,15 +65,15 @@ function ThirdNews() {
                 </article>
 
                 <article>
-                    <div class="third-news-thumb">
+                    <div className="third-news-thumb">
                         <img src={thirtNewsFourthThumb} alt="" />
 
                     </div>
 
-                    <div class="third-news-description">
-                        <span class="third-label">Eco</span>
-                        <p class="third-title">Plantas carnivoras </p>
-                        <p class="third-description"> A nova moda agora são plantas <br /> vegetarianas, movimento ganha
+                    <div className="third-news-description">
+                        <span className="third-label">Eco</span>
+                        <p className="third-title">Plantas carnivoras </p>
+                        <p className="third-description"> A nova moda agora são plantas <br /> vegetarianas, movimento ganha
                             <br />forças em 2020. </p>
                     </div>
 

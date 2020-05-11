@@ -8,11 +8,11 @@ import advertising from '../../media/propaganda.png'
 function Advertising() {
     return (
 
-        <div class="advertising">
+        <div className="advertising">
 
             <hr />
 
-            <img class="advertise" src={advertising} alt="" />
+            <img className="advertise" src={advertising} alt="" />
 
             <hr />
         </div>
