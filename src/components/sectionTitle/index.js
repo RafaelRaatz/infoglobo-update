@@ -1,12 +1,17 @@
 import React from 'react';
 import '../../global.css'
+import { Title, FinalTitle } from "../../styles"
 
 
-const SectionTitle = () => {
+const SectionTitle = ({ text, text2 }) => {
     return (
 
         <div className="container">
-            <div className="section-title clearfix">Brasil</div>
+            <div >
+                <Title>{text}</Title>
+                <FinalTitle>{text2}</FinalTitle>
+
+            </div>
         </div>
 
 

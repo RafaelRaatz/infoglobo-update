@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    width: 1050px;
+    width: 1020px;
     margin: 0 auto; 
 }
 
@@ -24,22 +24,6 @@ body {
     
 }
 
-/***** text editing *****/
 
-.section-title {
-    margin-top: 5px;
-    text-transform:uppercase;
-    color:#014562;
-    font-weight:bold;
-    font-size: 1.5em;
-    
-}
 
-.section-final-text {
-    text-transform:uppercase;
-    color:#014562;
-    font-weight:bold;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: row-reverse;
-}
+

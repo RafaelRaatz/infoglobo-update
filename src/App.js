@@ -10,7 +10,8 @@ import FourthNews from './components/fourthNews'
 import FifthNews from './components/fifthNews'
 import Footer from './components/footer'
 import SectionTitle from './components/sectionTitle'
-import SectionFinalText from './components/sectionFinalText'
+
+
 
 const App = () => {
   return (
@@ -33,17 +34,23 @@ const App = () => {
 
       <section>
 
-        <SectionTitle />
+        <SectionTitle text="Brasil" />
+
 
         <FourthNews />
 
-        <SectionFinalText />
 
-        <SectionTitle />
+        <SectionTitle text2="Mundo+" />
+
+
+        <SectionTitle text="Brasil" />
+
 
         <FifthNews />
 
-        <SectionFinalText />
+
+        <SectionTitle text2="Mundo+" />
+
 
       </section>
       <Footer />

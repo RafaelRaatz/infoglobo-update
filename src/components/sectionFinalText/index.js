@@ -7,7 +7,7 @@ const SectionFinalText = () => {
 
         <div className="container">
             <hr />
-            <div className="section-final-text "> Mundo+ </div>
+            <div > Mundo+ </div>
         </div>
 
 
