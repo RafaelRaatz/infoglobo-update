@@ -2,12 +2,11 @@
     margin-bottom:32px;
     position: relative;
     display: flex;
-    flex-direction: row;
+
 
 }
 
 .news article{
-
     margin-right:70px;
     position: relative;
 }

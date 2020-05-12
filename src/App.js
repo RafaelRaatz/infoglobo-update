@@ -11,6 +11,9 @@ import FifthNews from './components/fifthNews'
 import Footer from './components/footer'
 import SectionTitle from './components/sectionTitle'
 
+import FirstImg from './media/noticia-1.jpeg'
+import SecondImg from './media/noticia-2.jpeg'
+
 
 
 const App = () => {
@@ -22,7 +25,25 @@ const App = () => {
 
       <section className="main">
 
-        <FirstNews />
+        <div className="container">
+
+          <div className="news">
+
+            <FirstNews
+              Img={FirstImg}
+              Label="esportes"
+              Title="Beisebol é um esporte para todos ?"
+              Description="Todo mundo sabe que futebol é muito melhor, mas estudos dizem que o beisebol é o pior." />
+
+
+            <FirstNews
+              Img={SecondImg}
+              Label="esportes"
+              Title="Desfile de moda já é modaeisebol é um esporte para todos ?"
+              Description="Desfiles são tendencia na moda, palmeiras adota o novo costume." />
+          </div>
+
+        </div>
 
         <SecondNews />
 
@@ -40,10 +61,10 @@ const App = () => {
         <FourthNews />
 
 
-        <SectionTitle text2="Mundo+" />
+        <SectionTitle text2="Brasil+" />
 
 
-        <SectionTitle text="Brasil" />
+        <SectionTitle text="Mundo" />
 
 
         <FifthNews />
