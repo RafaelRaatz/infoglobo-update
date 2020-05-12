@@ -1,15 +1,20 @@
-.second-news{
+.MediumNews{
     margin-bottom: 32px;
     display: flex;
     flex-direction: row;
     
 }
 
-.first-article{
-    margin-right: 110px;
+.article{
+    margin-right: 50px;
+    display: flex;
 }
 
-.second-news .second-label{
+.newsDescription {
+    margin-right: 0px; 
+}
+
+.label{
     
     text-transform:uppercase;
     color:blue;
@@ -19,7 +24,7 @@
 }
 
 
-.second-news .second-title{
+.title{
     
     font-size:1.1em;
     margin-bottom: 7px;
@@ -27,15 +32,15 @@
     color:black;
 }
 
-.second-news .second-description{
+.description{
     font-size: 0.9em;
     line-height: 17px;
     color: black;
 }
 
-.second-news .second-news-thumb{
+.Thumb{
 
-    margin-right: 8px;
+    margin-right: 10px;
     
     
 }

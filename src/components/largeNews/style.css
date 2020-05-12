@@ -1,24 +1,22 @@
-.news{  
+.largeNews{  
     margin-bottom:32px;
     position: relative;
     display: flex;
-
-
 }
 
-.news article{
+.largeNews article{
     margin-right:70px;
     position: relative;
 }
 
-.news-description{
+.largeNewsDescription{
     position: absolute;
     bottom: 20px;
     z-index: 10;
     padding: 0 20px
 }
 
-.news .label{
+.largeNews .label{
     text-transform:uppercase;
     color:blue;
     font-weight:bold;
@@ -26,7 +24,7 @@
 
 }
 
-.news .title{
+.largeNews .title{
     font-size:1.1em;
     margin-bottom: 7px;
     font-weight: bold;
@@ -34,14 +32,14 @@
 
 }
 
-.news .description{
+.largeNews .description{
     font-size: 0.9em;
     line-height: 17px;
     color: #fff;
 
 }
 
-.news .overlay{
+.largeNews .overlay{
     background-color: rgba(0,0,0,0.58);
     bottom: 0;
     left: 0;
@@ -52,7 +50,7 @@
     height: 99%;
 }
 
-.news .news-thumb{
+.largeNews .thumb{
     position: relative; 
     margin-top: 20px;
 }
