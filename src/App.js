@@ -1,20 +1,24 @@
 import React from 'react';
-import './style.css';
-import './global.css';
-import logo from './media/logo.png'
+import './global.css'
 
-import firstNewsFirstThumb from './media/noticia-1.jpeg'
-import firstNewsSecondThumb from './media/noticia-2.jpeg'
+import Header from './components/header'
+import LargeNews from './components/largeNews'
+import MediumNews from './components/mediumNews'
+import SmallNews from './components/smallNews'
+import Advertising from './components/advertising'
+import Footer from './components/footer'
+import SectionTitle from './components/sectionTitle'
 
-import secondNewsFirstThumb from './media/noticia-3.jpeg'
-import secondNewssecondThumb from './media/noticia-4.jpeg'
+import LargeFirstThumb from './media/noticia-1.jpeg'
+import LargeSecondThumb from './media/noticia-2.jpeg'
+
+import MediumNewsFirstThumb from './media/noticia-3.jpeg'
+import MediumNewssecondThumb from './media/noticia-4.jpeg'
 
 import thirdNewsFirstThumb from './media/noticia-5.jpeg'
 import thirdNewsSecondThumb from './media/noticia-6.jpeg'
 import thirdNewsThirdThumb from './media/noticia-8.jpeg'
 import thirtNewsFourthThumb from './media/noticia-9.jpeg'
-
-import advertising from './media/propaganda.png'
 
 import fourthNewsFirstThumb from './media/noticia-10.jpeg'
 import fourthNewsSecondThumb from './media/noticia-11.jpeg'
@@ -26,396 +30,178 @@ import fifthNewsSecondThumb from './media/noticia-15.jpeg'
 import fifthNewsThirdThumb from './media/noticia-16.jpeg'
 import fifthNewsFourthThumb from './media/noticia-17.jpeg'
 
-import logoFooter from './media/logo-footer.png'
 
-
-
-
-
-function App() {
+const App = () => {
   return (
 
-    <body>
+    <div>
+
+      <Header />
+
+      <section className="main">
+
+        <div className="container">
+
+          <div className="largeNews">
+
+            <LargeNews
+              Img={LargeFirstThumb}
+              Label="esportes"
+              Title="Beisebol é um esporte para todos ?"
+              Description="Todo mundo sabe que futebol é muito melhor, mas estudos dizem que o beisebol é o pior." />
 
 
-      <header>
-
-        <div class="container">
-          <img src={logo} alt="" />
-
-        </div>
-      </header>
-
-      <section class="main">
-
-
-        <div class="container">
-
-          <div class="news">
-
-
-            <article>
-              <div class="news-thumb">
-                <img src={firstNewsFirstThumb} alt="" />
-                <div class="overlay"></div>
-              </div>
-              <div class="news-description">
-                <span class="label">Esporte</span>
-                <p class="title">Beisebol é um esporte para todos ?</p>
-                <p class="description">Todo mundo sabe que futebol é muito melhor, mas estudos dizem <br /> que o
-                            beisebol é o pior. </p>
-              </div>
-            </article>
-
-            <article>
-              <div class="news-thumb">
-                <img src={firstNewsSecondThumb} alt="" />
-                <div class="overlay"></div>
-              </div>
-              <div class="news-description">
-                <span class="label">Moda</span>
-                <p class="title">Desfile de moda já é moda</p>
-                <p class="description">Todo mundo sabe que desfiles são tendencia na moda, palmeiras <br /> adota
-                            o novo costume. </p>
-              </div>
-            </article>
+            <LargeNews
+              Img={LargeSecondThumb}
+              Label="esportes"
+              Title="Desfile de moda já é moda"
+              Description="Desfiles são tendencia na moda, palmeiras adota o novo costume em seu time." />
           </div>
+
         </div>
 
-        <div class="container">
-          <div class="second-news">
+        <div className="container">
 
+          <div className="MediumNews">
 
-            <div class="second-news-thumb">
-              <img src={secondNewsFirstThumb} alt="" />
+            <MediumNews
+              Img={MediumNewsFirstThumb}
+              Label="Moda"
+              Title="Gravatas não são mais apenas adereços "
+              Description="O mundo sempre acorda com uma novidade e dessa vez as
+              gravatas chegam pra dominar o verão." />
 
-            </div>
+            <MediumNews
+              Img={MediumNewssecondThumb}
+              Label="Influencer"
+              Title="Fotos em janelas agora tem mais likes"
+              Description="Instagram parou com a nova onda de fotos em janelas,
+              veja dicas de como tirar a sua foto." />
 
+          </div>
 
+        </div>
 
-            <article class="first-article">
+        <div className="container">
 
-              <div class="second-news-description">
-                <span class="second-label">Influencer</span>
-                <p class="second-title">Gravatas não são mais <br /> apenas adereços </p>
-                <p class="second-description">O mundo sempre acorda com uma <br /> novidade e dessa vez as
-                            gravatas <br /> chegam pra dominar o verão. </p>
-              </div>
+          <div className="smallNews ">
 
+            <SmallNews
+              Img={thirdNewsFirstThumb}
+              Label="Influencer"
+              Title="Jbo x Leda"
+              Description=" Qual a melhor escola da região de itapecerica da serra de sua opinião."
+            />
 
-            </article>
+            <SmallNews
+              Img={thirdNewsSecondThumb}
+              Label="Esporte"
+              Title="Corridas velozes"
+              Description=" O esporte que mais cresceu no ano foi a corrida, o grande responsavel foi o jogador Mbappe."
+            />
 
+            <SmallNews
+              Img={thirdNewsThirdThumb}
+              Label="Globo rural"
+              Title="Porco não tem mundial"
+              Description="Porco vai pra campeonato mundial mas não leva a melhor em disputa e acaba ficando em segundo."
+            />
 
-
-
-
-            <div class="second-news-thumb">
-              <img src={secondNewssecondThumb} alt="" />
-
-            </div>
-
-
-
-            <article class="second-article">
-              <div class="second-news-description">
-                <span class="second-label">Influencer</span>
-                <p class="second-title">Fotos em janelas agora <br /> tem mais likes </p>
-                <p class="second-description"> Instagram parou com a nova onda <br /> de fotos em janelas,
-                            veja dicas de <br />como tirar a sua foto. </p>
-              </div>
-            </article>
-
-
+            <SmallNews
+              Img={thirtNewsFourthThumb}
+              Label="Eco"
+              Title="Plantas carnivoras"
+              Description="A nova moda agora são plantas vegetarianas, movimento ganha forças em 2020."
+            />
 
           </div>
         </div>
-        <div class="container">
-          <div class="third-news ">
-
-
-            <article>
-
-
-              <div class="third-news-thumb">
-                <img src={thirdNewsFirstThumb} alt="" />
-
-              </div>
-
-              <div class="third-news-description">
-                <span class="third-label">Educação</span>
-                <p class="third-title">Jbo x Leda </p>
-                <p class="third-description"> Qual a melhor escola da região <br /> de itapecerica da serra, de
-                            sua <br />opinião. </p>
-              </div>
-
-            </article>
-
-            <article>
-              <div class="third-news-thumb">
-                <img src={thirdNewsSecondThumb} alt="" />
-
-              </div>
-
-              <div class="third-news-description">
-                <span class="third-label">Esporte</span>
-                <p class="third-title">Corridas velozes </p>
-                <p class="third-description"> O esporte que mais cresceu no ano <br /> foi a corrida, o grande
-                            responsavel <br />foi o jogador Mbappe. </p>
-              </div>
-
-
-
-            </article>
-
-            <article>
-              <div class="third-news-thumb">
-                <img src={thirdNewsThirdThumb} alt="" />
-
-              </div>
-
-              <div class="third-news-description">
-                <span class="third-label">Globo rural</span>
-                <p class="third-title">Porco não tem mundial </p>
-                <p class="third-description"> Porco vai pra campeonato mundial <br /> mas não leva a melhor em
-                            disputa <br />e acaba ficando em segundo. </p>
-              </div>
-
-
-            </article>
-
-            <article>
-              <div class="third-news-thumb">
-                <img src={thirtNewsFourthThumb} alt="" />
-
-              </div>
-
-              <div class="third-news-description">
-                <span class="third-label">Eco</span>
-                <p class="third-title">Plantas carnivoras </p>
-                <p class="third-description"> A nova moda agora são plantas <br /> vegetarianas, movimento ganha
-                            <br />forças em 2020. </p>
-              </div>
-
-
-
-            </article>
-
-          </div>
-        </div>
-
-
-
 
       </section>
 
-
-      <div class="advertising">
-
-        <hr />
-
-        <img class="advertise" src={advertising} alt="" />
-
-      </div>
-      <hr />
-
+      <Advertising />
 
       <section>
 
-        <div class="container">
-          <div class="section-title clearfix"> Brasil</div>
-        </div>
 
-        <div class="container">
-          <div class="fourth-news">
+        <SectionTitle text="Brasil" />
 
+        <div className="container">
 
+          <div className="smallNews ">
 
+            <SmallNews
+              Img={fourthNewsFirstThumb}
+              Label="Entreterimento"
+              Title="Perdas e mais perdas"
+              Description=" A cidade de São Paulo esta entre as cidades que as pessoas maisperdem objetos na rua."
+            />
 
-            <article>
-              <div class="fourth-news-thumb">
-                <img src={fourthNewsFirstThumb} alt="" />
+            <SmallNews
+              Img={fourthNewsSecondThumb}
+              Label="Games"
+              Title="Harvest Moon"
+              Description="O jogo Harvest Moon ensina como seu outono pode ser melhor plantando batatas doce."
+            />
 
-              </div>
+            <SmallNews
+              Img={fourthNewsThirdThumb}
+              Label="Natureza"
+              Title="Peruibe e suas rochas"
+              Description="As rochas de peruibe são as mais perigosas do mundo diz pesquisa feita pela professora Maria Helena."
+            />
 
-              <div class="fourth-news-description">
-                <span class="fourth-label">Entreterimento</span>
-                <p class="fourth-title">Perdas e mais perdas </p>
-                <p class="fourth-description"> A cidade de São Paulo esta entre <br /> as cidades que as pessoas
-                            mais <br />perdem objetos na rua. </p>
-              </div>
-
-            </article>
-
-            <article>
-              <div class="fourth-news-thumb">
-                <img src={fourthNewsSecondThumb} alt="" />
-
-              </div>
-
-              <div class="fourth-news-description">
-                <span class="fourth-label">Eco</span>
-                <p class="fourth-title">Arvores e suas ultilidades </p>
-                <p class="fourth-description"> Arvores não servem apenas para <br /> subir nelas, mas tambem
-                            servem <br />para tapar o sol #ficadica. </p>
-              </div>
-
-
-
-            </article>
-
-            <article>
-              <div class="fourth-news-thumb">
-                <img src={fourthNewsThirdThumb} alt="" />
-
-              </div>
-
-              <div class="fourth-news-description">
-                <span class="fourth-label">Natureza</span>
-                <p class="fourth-title">Peruibe e suas rochas</p>
-                <p class="fourth-description"> As rochas de peruibe são as mais <br /> perigosas do mundo diz a
-                            pesquisa <br />feita pela professora Maria Helena. </p>
-              </div>
-
-
-            </article>
-
-            <article>
-              <div class="fourth-news-thumb">
-                <img src={fourthNewsFourthThumb} alt="" />
-
-              </div>
-
-              <div class="fourth-news-description">
-                <span class="fourth-label">Games</span>
-                <p class="fourth-title">Cenarios de God of war </p>
-                <p class="fourth-description"> Nessa ultima terça os cenarios do<br /> game God of War viraram
-                            alvo <br /> de turistas de todo mundo. </p>
-              </div>
-
-
-
-            </article>
-
+            <SmallNews
+              Img={fourthNewsFourthThumb}
+              Label="Games"
+              Title="Cenarios de God of war"
+              Description="Nessa ultima terça os cenarios do game God of War viraram alvo de turistas de todo mundo."
+            />
           </div>
         </div>
 
+        <SectionTitle text="Mundo" />
 
+        <div className="container">
 
-        <div class="container">
-          <hr />
-          <div class="section-final-text "> Brasil+ </div>
+          <div className="smallNews ">
 
-        </div>
+            <SmallNews
+              Img={fifthNewsfirstThumb}
+              Label="Séries"
+              Title="Game of Thrones"
+              Description=" Game of Thrones ganha versão baby, veja como Tyrion ficou."
+            />
 
+            <SmallNews
+              Img={fifthNewsSecondThumb}
+              Label="Cinema"
+              Title="Velozes e Furiosos"
+              Description=" O novo filme da serie ganha nova temática e prédios tomam o lugar dos carros, arquitetos apoiam. "
+            />
 
+            <SmallNews
+              Img={fifthNewsThirdThumb}
+              Label="Eco"
+              Title="Águas de lindóia"
+              Description="quantas vezes se perguntou onde fica águas de lindóia ao beber sua garrafinha, descubra agora. "
+            />
 
-        <div class="container">
-
-          <div class="section-title clearfix"> Mundo</div>
-
-        </div>
-
-        <div class="container">
-          <div class="fifth-news ">
-
-
-            <article>
-              <div class="fifth-news-thumb">
-                <img src={fifthNewsfirstThumb} alt="" />
-
-              </div>
-
-              <div class="fifth-description">
-                <span class="fifth-label">Entreterimento</span>
-                <p class="fifth-title">Perdas e mais perdas </p>
-                <p class="fifth-description"> A cidade de São Paulo esta entre <br /> as cidades que as pessoas
-                            mais <br />perdem objetos na rua. </p>
-              </div>
-
-            </article>
-
-            <article>
-              <div class="fifth-news-thumb">
-                <img src={fifthNewsSecondThumb} alt="" />
-
-              </div>
-
-              <div class="fifth-description">
-                <span class="fifth-label">Eco</span>
-                <p class="fifth-title">Arvores e suas ultilidades </p>
-                <p class="fifth-description"> Arvores não servem apenas para <br /> subir nelas, mas tambem
-                            servem <br />para tapar o sol #ficadica. </p>
-              </div>
-
-
-
-            </article>
-
-            <article>
-              <div class="fifth-news-thumb">
-                <img src={fifthNewsThirdThumb} alt="" />
-
-              </div>
-
-              <div class="fifth-description">
-                <span class="fifth-label">Natureza</span>
-                <p class="fifth-title">Peruibe e suas rochas</p>
-                <p class="fifth-description"> As rochas de peruibe são as mais <br /> perigosas do mundo diz a
-                            pesquisa <br />feita pela professora Maria Helena. </p>
-              </div>
-
-
-            </article>
-
-            <article>
-              <div class="fifth-news-thumb">
-                <img src={fifthNewsFourthThumb} alt="" />
-
-              </div>
-
-              <div class="fifth-description">
-                <span class="fifth-label">Games</span>
-                <p class="fifth-title">Cenarios de God of war </p>
-                <p class="fifth-description"> Nessa ultima terça os cenarios do<br /> game God of War viraram
-                            alvo <br /> de turistas de todo mundo. </p>
-              </div>
-
-
-
-            </article>
+            <SmallNews
+              Img={fifthNewsFourthThumb}
+              Label="Eco"
+              Title="Arvores e suas ultilidades"
+              Description="Arvores não servem apenas para subir nelas, mas tambem servem para tapar o sol #ficadica."
+            />
 
           </div>
         </div>
-
-
-
-
-        <div class="container">
-          <hr />
-          <div class="section-final-text "> Mundo+ </div>
-
-        </div>
-
-
-
-
 
       </section>
+      <Footer />
+    </div>
 
 
-      <div id="footer">
-
-        <img class="img-footer" src={logoFooter} alt="" />
-
-        <p class="text-footer"> COPYRIGHT &copy; 2017 <br />
-            TODOS OS DIREITOS RESERVADOS
-        </p>
-
-      </div>
-
-
-
-    </body>
   );
 }
 

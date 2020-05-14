@@ -1,0 +1,46 @@
+.MediumNews{
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.article{
+    margin-right: 50px;
+    display: flex;
+}
+
+.newsDescription {
+    margin-right: 0px; 
+}
+
+.label{
+    
+    text-transform:uppercase;
+    color:blue;
+    font-weight:bold;
+    font-size: 0.6em;
+    
+}
+
+
+.title{
+    
+    font-size:1.1em;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color:black;
+}
+
+.description{
+    font-size: 0.9em;
+    line-height: 17px;
+    color: black;
+}
+
+.Thumb{
+
+    margin-right: 10px;
+    
+    
+}

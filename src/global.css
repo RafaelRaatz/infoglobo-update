@@ -9,7 +9,21 @@
 
 
 body {
-    font:  'Roboto', sans-serif;
+    font:"Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
 
 }
+
+.container {
+    width: 1020px;
+    margin: 0 auto; 
+}
+
+.main{
+    margin-top:30px;
+    
+}
+
+
+
+

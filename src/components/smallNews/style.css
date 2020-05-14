@@ -1,0 +1,32 @@
+.smallNews {     
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.smallNews article{
+
+    margin-right:50px;
+    
+}
+
+.smallNews .label{
+    
+    text-transform:uppercase;
+    color:blue;
+    font-weight:bold;
+    font-size: 0.6em;;
+}
+
+.smallNews .title{
+
+    font-size:1.1em;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color:black;
+}
+    
+.smallNews .description{
+    font-size: 0.9em;
+    line-height: 17px;
+    color: black; 
+}
