@@ -1,26 +1,24 @@
 import React from 'react';
-import './style.css';
-import '../../global.css'
-
-
-
+import { ArticleStyle, ThumbStyle, Overlay, DescriptionStyle, LabelStyle, TitleStyle, TextStyle } from "./styles"
 
 
 const FirstNews = ({ Img, Label, Title, Description }) => {
     return (
 
-        <article>
-            <div className="thumb">
+        <ArticleStyle>
+            <ThumbStyle>
                 <img src={Img} alt="" />
-                <div className="overlay"></div>
-            </div>
+                <Overlay></Overlay>
+            </ThumbStyle>
 
-            <div className="largeNewsDescription">
-                <span className="label">{Label}</span>
-                <p className="title">{Title}</p>
-                <p className="description">{Description}</p>
-            </div>
-        </article>
+            <DescriptionStyle>
+
+                <LabelStyle>{Label}</LabelStyle>
+                <TitleStyle>{Title}</TitleStyle>
+                <TextStyle>{Description}</TextStyle>
+
+            </DescriptionStyle>
+        </ArticleStyle>
 
     );
 }

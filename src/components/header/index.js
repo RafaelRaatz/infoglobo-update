@@ -1,19 +1,18 @@
 import React from 'react';
-import './style.css';
 import logo from '../../media/logo.png'
-import '../../global.css'
+import { HeaderStyle } from "./styles"
 
 
 const Header = () => {
     return (
 
-        <header>
+        <HeaderStyle>
 
-            <div className="container">
-                <img src={logo} alt="" />
 
-            </div>
-        </header>
+            <img src={logo} alt="" />
+
+
+        </HeaderStyle>
 
     );
 }

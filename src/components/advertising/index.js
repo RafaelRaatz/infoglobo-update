@@ -1,23 +1,17 @@
 import React from 'react';
-import './style.css';
-import '../../global.css'
+import { AdvertisingStyle, AdvertiseStyle } from "./styles"
 
-import advertising from '../../media/propaganda.png'
+import advertisingThumb from '../../media/propaganda.png'
 
 
 const Advertising = () => {
     return (
 
-        <div className="advertising">
+        <AdvertisingStyle>
 
-            <hr />
+            <AdvertiseStyle> <img src={advertisingThumb} alt="" /> </AdvertiseStyle>
 
-            <img className="advertise" src={advertising} alt="" />
-
-            <hr />
-        </div>
-
-
+        </AdvertisingStyle>
 
     );
 }

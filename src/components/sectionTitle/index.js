@@ -1,20 +1,11 @@
 import React from 'react';
-import '../../global.css'
-import { Title, FinalTitle } from "../../styles"
+import { Title } from "./styles"
 
 
-const SectionTitle = ({ text, text2 }) => {
+const SectionTitle = ({ text }) => {
     return (
 
-        <div className="container">
-            <div >
-                <Title>{text}</Title>
-                <FinalTitle>{text2}</FinalTitle>
-
-            </div>
-        </div>
-
-
+        <Title>{text}</Title>
 
     );
 }

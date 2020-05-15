@@ -1,21 +1,20 @@
 import React from 'react';
-import './style.css';
-import '../../global.css'
+import { FooterStyle, ImgFooter, TextFooter } from "./styles"
 
 import logoFooter from '../../media/logo-footer.png'
 
 const Footer = () => {
     return (
 
-        <div id="footer">
+        <FooterStyle>
 
-            <img className="img-footer" src={logoFooter} alt="" />
+            <ImgFooter> <img src={logoFooter} alt="" /> </ImgFooter>
 
-            <p className="text-footer"> COPYRIGHT &copy; 2017 <br />
+            <TextFooter> COPYRIGHT &copy; 2017 <br />
         TODOS OS DIREITOS RESERVADOS
-    </p>
+            </TextFooter>
 
-        </div>
+        </FooterStyle>
 
     );
 }

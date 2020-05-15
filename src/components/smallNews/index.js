@@ -1,20 +1,19 @@
 import React from 'react';
-import './style.css';
-import '../../global.css'
+import { Article, Label, Title, Description } from "./styles"
 
-const SmallNews = ({ Img, Label, Title, Description }) => {
+const SmallNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
     return (
 
-        <article>
+        <Article>
 
             <img src={Img} alt="" />
 
-            <span className="label">{Label}</span>
-            <p className="title">{Title} </p>
-            <p className="description"> {Description} </p>
+            <Label>{LabelText}</Label>
+            <Title>{TitleText} </Title>
+            <Description>{DescriptionText}</Description>
 
 
-        </article>
+        </Article>
 
     );
 }

@@ -9,6 +9,8 @@ import Advertising from './components/advertising'
 import Footer from './components/footer'
 import SectionTitle from './components/sectionTitle'
 
+import { Container, Main, SmallNewsStyle, LargeNewsStyle, MediumNewsStyle } from "./styles"
+
 import LargeFirstThumb from './media/noticia-1.jpeg'
 import LargeSecondThumb from './media/noticia-2.jpeg'
 
@@ -38,11 +40,11 @@ const App = () => {
 
       <Header />
 
-      <section className="main">
+      <Main>
 
-        <div className="container">
+        <Container>
 
-          <div className="largeNews">
+          <LargeNewsStyle>
 
             <LargeNews
               Img={LargeFirstThumb}
@@ -56,13 +58,14 @@ const App = () => {
               Label="esportes"
               Title="Desfile de moda já é moda"
               Description="Desfiles são tendencia na moda, palmeiras adota o novo costume em seu time." />
-          </div>
 
-        </div>
+          </LargeNewsStyle>
 
-        <div className="container">
+        </Container>
 
-          <div className="MediumNews">
+        <Container>
+
+          <MediumNewsStyle>
 
             <MediumNews
               Img={MediumNewsFirstThumb}
@@ -78,127 +81,141 @@ const App = () => {
               Description="Instagram parou com a nova onda de fotos em janelas,
               veja dicas de como tirar a sua foto." />
 
-          </div>
+          </MediumNewsStyle>
 
-        </div>
+        </Container>
 
-        <div className="container">
+        <Container>
 
-          <div className="smallNews ">
+          <SmallNewsStyle>
 
             <SmallNews
               Img={thirdNewsFirstThumb}
-              Label="Influencer"
-              Title="Jbo x Leda"
-              Description=" Qual a melhor escola da região de itapecerica da serra de sua opinião."
+              LabelText="Influencer"
+              TitleText="Jbo x Leda"
+              DescriptionText=" Qual a melhor escola da região de itapecerica da serra de sua opinião."
             />
 
             <SmallNews
               Img={thirdNewsSecondThumb}
-              Label="Esporte"
-              Title="Corridas velozes"
-              Description=" O esporte que mais cresceu no ano foi a corrida, o grande responsavel foi o jogador Mbappe."
+              LabelText="Esporte"
+              TitleText="Corridas velozes"
+              DescriptionText=" O esporte que mais cresceu no ano foi a corrida, o grande responsavel foi o jogador Mbappe."
             />
 
             <SmallNews
               Img={thirdNewsThirdThumb}
-              Label="Globo rural"
-              Title="Porco não tem mundial"
-              Description="Porco vai pra campeonato mundial mas não leva a melhor em disputa e acaba ficando em segundo."
+              LabelText="Globo rural"
+              TitleText="Porco não tem mundial"
+              DescriptionText="Porco vai pra campeonato mundial mas não leva a melhor em disputa e acaba ficando em segundo."
             />
 
             <SmallNews
               Img={thirtNewsFourthThumb}
-              Label="Eco"
-              Title="Plantas carnivoras"
-              Description="A nova moda agora são plantas vegetarianas, movimento ganha forças em 2020."
+              LabelText="Eco"
+              TitleText="Plantas carnivoras"
+              DescriptionText="A nova moda agora são plantas vegetarianas, movimento ganha forças em 2020."
             />
 
-          </div>
-        </div>
+          </SmallNewsStyle>
 
-      </section>
+        </Container>
+
+      </Main>
 
       <Advertising />
 
-      <section>
+      <Main>
 
+        <Container>
 
-        <SectionTitle text="Brasil" />
+          <SectionTitle text="Brasil" />
 
-        <div className="container">
+        </Container>
 
-          <div className="smallNews ">
+        <Container>
+
+          <SmallNewsStyle>
 
             <SmallNews
               Img={fourthNewsFirstThumb}
-              Label="Entreterimento"
-              Title="Perdas e mais perdas"
-              Description=" A cidade de São Paulo esta entre as cidades que as pessoas maisperdem objetos na rua."
+              LabelText="Entreterimento"
+              TitleText="Perdas e mais perdas"
+              DescriptionText=" A cidade de São Paulo esta entre as cidades que as pessoas mais perdem objetos na rua."
             />
 
             <SmallNews
               Img={fourthNewsSecondThumb}
-              Label="Games"
-              Title="Harvest Moon"
-              Description="O jogo Harvest Moon ensina como seu outono pode ser melhor plantando batatas doce."
+              LabelText="Games"
+              TitleText="Harvest Moon"
+              DescriptionText="O jogo Harvest Moon ensina como seu outono pode ser melhor plantando batatas doce."
             />
 
             <SmallNews
               Img={fourthNewsThirdThumb}
-              Label="Natureza"
-              Title="Peruibe e suas rochas"
-              Description="As rochas de peruibe são as mais perigosas do mundo diz pesquisa feita pela professora Maria Helena."
+              LabelText="Natureza"
+              TitleText="Peruibe e suas rochas"
+              DescriptionText="As rochas de peruibe são as mais perigosas do mundo diz pesquisa feita pela professora Maria Helena."
             />
 
             <SmallNews
               Img={fourthNewsFourthThumb}
-              Label="Games"
-              Title="Cenarios de God of war"
-              Description="Nessa ultima terça os cenarios do game God of War viraram alvo de turistas de todo mundo."
+              LabelText="Games"
+              TitleText="Cenarios de God of war"
+              DescriptionText="Nessa ultima terça os cenarios do game God of War viraram alvo de turistas de todo mundo."
             />
-          </div>
-        </div>
 
-        <SectionTitle text="Mundo" />
+          </SmallNewsStyle>
 
-        <div className="container">
+        </Container>
 
-          <div className="smallNews ">
+
+        <Container>
+
+          <SectionTitle text="Mundo" />
+
+        </Container>
+
+        <Container>
+
+          <SmallNewsStyle>
 
             <SmallNews
               Img={fifthNewsfirstThumb}
-              Label="Séries"
-              Title="Game of Thrones"
-              Description=" Game of Thrones ganha versão baby, veja como Tyrion ficou."
+              LabelText="Séries"
+              TitleText="Game of Thrones"
+              DescriptionText=" Game of Thrones ganha versão baby, veja como Tyrion ficou."
             />
 
             <SmallNews
               Img={fifthNewsSecondThumb}
-              Label="Cinema"
-              Title="Velozes e Furiosos"
-              Description=" O novo filme da serie ganha nova temática e prédios tomam o lugar dos carros, arquitetos apoiam. "
+              LabelText="Cinema"
+              TitleText="Velozes e Furiosos"
+              DescriptionText=" O novo filme da serie ganha nova temática e prédios tomam o lugar dos carros, arquitetos apoiam. "
             />
 
             <SmallNews
               Img={fifthNewsThirdThumb}
-              Label="Eco"
-              Title="Águas de lindóia"
-              Description="quantas vezes se perguntou onde fica águas de lindóia ao beber sua garrafinha, descubra agora. "
+              LabelText="Eco"
+              TitleText="Águas de lindóia"
+              DescriptionText="quantas vezes se perguntou onde fica águas de lindóia ao beber sua garrafinha, descubra agora. "
             />
 
             <SmallNews
               Img={fifthNewsFourthThumb}
-              Label="Eco"
-              Title="Arvores e suas ultilidades"
-              Description="Arvores não servem apenas para subir nelas, mas tambem servem para tapar o sol #ficadica."
+              LabelText="Eco"
+              TitleText="Arvores e suas ultilidades"
+              DescriptionText="Arvores não servem apenas para subir nelas, mas tambem servem para tapar o sol #ficadica."
             />
 
-          </div>
-        </div>
+          </SmallNewsStyle>
 
-      </section>
+        </Container>
+
+      </Main>
+
       <Footer />
+
     </div>
 
 
