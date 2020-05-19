@@ -1,22 +1,23 @@
-import React from 'react';
-import { FooterStyle, ImgFooter, TextFooter } from "./styles"
+import React from "react";
+import { FooterStyle, ImgFooter, TextFooter } from "./styles";
 
-import logoFooter from '../../media/logo-footer.png'
+import logoFooter from "../../media/logo-footer.png";
 
 const Footer = () => {
-    return (
+  return (
+    <FooterStyle>
+      <ImgFooter>
+        {" "}
+        <img src={logoFooter} alt="" />{" "}
+      </ImgFooter>
 
-        <FooterStyle>
-
-            <ImgFooter> <img src={logoFooter} alt="" /> </ImgFooter>
-
-            <TextFooter> COPYRIGHT &copy; 2017 <br />
+      <TextFooter>
+        {" "}
+        COPYRIGHT &copy; 2017 <br />
         TODOS OS DIREITOS RESERVADOS
-            </TextFooter>
-
-        </FooterStyle>
-
-    );
-}
+      </TextFooter>
+    </FooterStyle>
+  );
+};
 
 export default Footer;
