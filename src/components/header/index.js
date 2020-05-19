@@ -1,12 +1,12 @@
 import React from "react";
 import logo from "../../media/logo.png";
-import { HeaderStyle } from "./styles";
+import { Container } from "./styles";
 
 const Header = () => {
   return (
-    <HeaderStyle>
+    <Container>
       <img src={logo} alt="" />
-    </HeaderStyle>
+    </Container>
   );
 };
 

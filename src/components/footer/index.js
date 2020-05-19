@@ -1,11 +1,11 @@
 import React from "react";
-import { FooterStyle, ImgFooter, TextFooter } from "./styles";
+import { Container, ImgFooter, TextFooter } from "./styles";
 
 import logoFooter from "../../media/logo-footer.png";
 
 const Footer = () => {
   return (
-    <FooterStyle>
+    <Container>
       <ImgFooter>
         {" "}
         <img src={logoFooter} alt="" />{" "}
@@ -16,7 +16,7 @@ const Footer = () => {
         COPYRIGHT &copy; 2017 <br />
         TODOS OS DIREITOS RESERVADOS
       </TextFooter>
-    </FooterStyle>
+    </Container>
   );
 };
 

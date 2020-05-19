@@ -1,14 +1,14 @@
 import React from "react";
-import { Article, Label, Title, Description } from "./styles";
+import { Article, Label, Title, Text } from "./styles";
 
-const SmallNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
+const SmallNews = ({ Img, LabelText, TitleText, Description }) => {
   return (
     <Article>
       <img src={Img} alt="" />
 
       <Label>{LabelText}</Label>
       <Title>{TitleText} </Title>
-      <Description>{DescriptionText}</Description>
+      <Text>{Description}</Text>
     </Article>
   );
 };

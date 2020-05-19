@@ -1,28 +1,28 @@
 import React from "react";
 import {
-  ArticleStyle,
-  ThumbStyle,
+  Article,
+  Thumb,
   Overlay,
-  DescriptionStyle,
-  LabelStyle,
-  TitleStyle,
-  TextStyle,
+  Description,
+  Label,
+  Title,
+  Text,
 } from "./styles";
 
-const FirstNews = ({ Img, Label, Title, Description }) => {
+const FirstNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
   return (
-    <ArticleStyle>
-      <ThumbStyle>
+    <Article>
+      <Thumb>
         <img src={Img} alt="" />
         <Overlay></Overlay>
-      </ThumbStyle>
+      </Thumb>
 
-      <DescriptionStyle>
-        <LabelStyle>{Label}</LabelStyle>
-        <TitleStyle>{Title}</TitleStyle>
-        <TextStyle>{Description}</TextStyle>
-      </DescriptionStyle>
-    </ArticleStyle>
+      <Description>
+        <Label>{LabelText}</Label>
+        <Title>{TitleText}</Title>
+        <Text>{DescriptionText}</Text>
+      </Description>
+    </Article>
   );
 };
 

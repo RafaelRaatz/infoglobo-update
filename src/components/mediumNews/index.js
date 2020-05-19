@@ -1,26 +1,20 @@
 import React from "react";
-import {
-  ArticleStyle,
-  Thumb,
-  LabelStyle,
-  TitleStyle,
-  TextStyle,
-} from "./styles";
+import { Article, Thumb, Label, Title, Text } from "./styles";
 
-const MediumNews = ({ Img, Label, Title, Description }) => {
+const MediumNews = ({ Img, LabelText, TitleText, Description }) => {
   return (
-    <ArticleStyle>
+    <Article>
       <Thumb>
         {" "}
         <img src={Img} alt="" />{" "}
       </Thumb>
 
       <div>
-        <LabelStyle>{Label}</LabelStyle>
-        <TitleStyle>{Title} </TitleStyle>
-        <TextStyle>{Description} </TextStyle>
+        <Label>{LabelText}</Label>
+        <Title>{TitleText} </Title>
+        <Text>{Description} </Text>
       </div>
-    </ArticleStyle>
+    </Article>
   );
 };
 

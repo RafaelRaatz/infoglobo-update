@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AdvertisingStyle = styled.div`
+export const Container = styled.div`
   background-color: #dcdcdc;
   margin-top: 10px;
   text-align: center;
@@ -8,7 +8,7 @@ export const AdvertisingStyle = styled.div`
   justify-content: center;
 `;
 
-export const AdvertiseStyle = styled.image`
+export const Advertise = styled.image`
   margin-top: 20px;
   padding-bottom: 15px;
 `;

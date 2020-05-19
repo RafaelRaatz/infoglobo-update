@@ -14,17 +14,17 @@ export const Main = styled.main`
   margin-top: 15px;
 `;
 
-export const LargeNewsStyle = styled.div`
+export const LargeNewsContainer = styled.div`
   margin-bottom: 32px;
   position: relative;
   display: flex;
 `;
 
-export const SmallNewsStyle = styled.div`
+export const SmallNewsContainer = styled.div`
   display: flex;
 `;
 
-export const MediumNewsStyle = styled.div`
+export const MediumNewsContainer = styled.div`
   margin-bottom: 32px;
   display: flex;
   flex-direction: row;

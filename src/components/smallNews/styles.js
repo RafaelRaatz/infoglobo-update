@@ -17,7 +17,7 @@ export const Title = styled.p`
   color: black;
 `;
 
-export const Description = styled.p`
+export const Text = styled.p`
   font-size: 0.9em;
   line-height: 17px;
   color: black;
