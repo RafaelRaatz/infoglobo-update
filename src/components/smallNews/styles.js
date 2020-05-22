@@ -5,7 +5,7 @@ export const Article = styled.article`
 `;
 export const Label = styled.span`
   text-transform: uppercase;
-  color: blue;
+  color: #014861;
   font-weight: bold;
   font-size: 0.6em;
 `;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./global.css";
+import GlobalStyle from "./styles/global";
 
 import Header from "./components/header";
 import LargeNews from "./components/largeNews";
@@ -192,6 +192,8 @@ const App = () => {
       </Main>
 
       <Footer />
+
+      <GlobalStyle />
     </div>
   );
 };

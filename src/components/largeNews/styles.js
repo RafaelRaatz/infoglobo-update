@@ -11,7 +11,7 @@ export const Thumb = styled.div`
 `;
 
 export const Overlay = styled.div`
-  background-color: rgba(0, 0, 0, 0.58);
+  background-color: rgb(0, 0, 0, 0.58);
   bottom: 0;
   left: 0;
   position: absolute;
@@ -30,7 +30,7 @@ export const Description = styled.div`
 
 export const Label = styled.span`
   text-transform: uppercase;
-  color: blue;
+  color: #014861;
   font-weight: bold;
   font-size: 0.6em;
 `;
