@@ -68,7 +68,7 @@ const App = () => {
               Img={MediumNewsFirstThumb}
               LabelText="Moda"
               TitleText="Gravatas não são mais apenas adereços "
-              Description="O mundo sempre acorda com uma novidade e dessa vez as
+              Text="O mundo sempre acorda com uma novidade e dessa vez as
               gravatas chegam pra dominar o verão."
             />
 
@@ -76,7 +76,7 @@ const App = () => {
               Img={MediumNewssecondThumb}
               LabelText="Influencer"
               TitleText="Fotos em janelas agora tem mais likes"
-              Description="Instagram parou com a nova onda de fotos em janelas,
+              Text="Instagram parou com a nova onda de fotos em janelas,
               veja dicas de como tirar a sua foto."
             />
           </MediumNewsContainer>
@@ -102,14 +102,14 @@ const App = () => {
               Img={thirdNewsThirdThumb}
               LabelText="Globo rural"
               TitleText="Porco não tem mundial"
-              Description="Porco vai pra campeonato mundial mas não leva a melhor em disputa e acaba ficando em segundo."
+              Description="Porco não leva a melhor no japão e acaba ficando em segundo."
             />
 
             <SmallNews
               Img={thirtNewsFourthThumb}
               LabelText="Eco"
               TitleText="Plantas carnivoras"
-              Description="A nova moda agora são plantas vegetarianas, movimento ganha forças em 2020."
+              Description="A nova moda agora são plantas vegetarianas, movimento 2020."
             />
           </SmallNewsContainer>
         </Container>

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Article = styled.article`
-  margin-right: 70px;
   position: relative;
 `;
 

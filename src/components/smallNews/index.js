@@ -5,10 +5,11 @@ const SmallNews = ({ Img, LabelText, TitleText, Description }) => {
   return (
     <Article>
       <img src={Img} alt="" />
-
-      <Label>{LabelText}</Label>
-      <Title>{TitleText} </Title>
-      <Text>{Description}</Text>
+      <div>
+        <Label>{LabelText}</Label>
+        <Title>{TitleText} </Title>
+        <Text>{Description}</Text>
+      </div>
     </Article>
   );
 };

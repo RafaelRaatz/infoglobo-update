@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Article = styled.article`
-  margin-right: 50px;
+  width: 216px;
 `;
 export const Label = styled.span`
   text-transform: uppercase;

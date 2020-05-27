@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Article = styled.article`
-  margin-right: 50px;
   display: flex;
 `;
 export const Thumb = styled.image`
@@ -21,8 +20,13 @@ export const Title = styled.p`
   font-weight: bold;
   color: black;
 `;
-export const Text = styled.p`
+export const SmallText = styled.p`
   font-size: 0.9em;
   line-height: 17px;
   color: black;
+`;
+
+export const Description = styled.div`
+  width: 240px;
+  margin-left: 10px;
 `;
