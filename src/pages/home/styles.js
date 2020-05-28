@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const BodyStyle = styled.body`
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-`;
-
 export const Container = styled.div`
   width: 1020px;
   margin: 0 auto;
