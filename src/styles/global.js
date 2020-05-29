@@ -15,4 +15,8 @@ export default createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   }
 
+  a{
+    text-decoration: none;
+  }
+
 `;

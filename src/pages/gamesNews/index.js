@@ -1,11 +1,12 @@
 import React from "react";
 import GlobalStyle from "../../styles/global";
 
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 import LargeArticle from "./components/largeArticle";
-import MediumArticle from "./components/mediumArticle";
-import SectionTitle from "./components/sectionTitle";
+import MediumNews from "../../components/largeNews";
+import SectionTitle from "../../components/sectionTitle";
+import Advertising from "../../components/advertising";
 
 import { Container, Main, LargeNewsContainer } from "./styles";
 import LargeFirstThumb from "../../media/assassins.jpg";
@@ -21,14 +22,14 @@ const GamesNews = () => {
       <Main>
         <Container>
           <LargeNewsContainer>
-            <MediumArticle
+            <MediumNews
               Img={LargeThirdThumb}
               LabelText="esportes"
               TitleText="Fifa mais do mesmo ?"
               DescriptionText="Fifa 20 leva a melhor no PS4 e Xbox-one entre games de esporte."
             />
 
-            <MediumArticle
+            <MediumNews
               Img={LargeFourthThumb}
               LabelText="Shooter"
               TitleText="PUBG em queda ?"
@@ -55,7 +56,7 @@ const GamesNews = () => {
 
         <Container>
           <LargeNewsContainer>
-            <MediumArticle
+            <MediumNews
               Img={LargeFirstThumb}
               LabelText="Aventura"
               TitleText="Asssassin's Creed Odyssey "
@@ -63,7 +64,7 @@ const GamesNews = () => {
               da saga de Ezio Auditore."
             />
 
-            <MediumArticle
+            <MediumNews
               Img={LargeSecondThumb}
               LabelText="Ação"
               TitleText="Uncharted 4"
@@ -73,6 +74,8 @@ const GamesNews = () => {
           </LargeNewsContainer>
         </Container>
       </Main>
+
+      <Advertising />
 
       <Footer />
 

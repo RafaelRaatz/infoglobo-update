@@ -4,7 +4,7 @@ import { Article, Label, Title, Text } from "./styles";
 const SmallNews = ({ Img, LabelText, TitleText, Description }) => {
   return (
     <Article>
-      <img src={Img} alt="" />
+      <img src={Img} width="216px" height="121px" alt="" />
       <div>
         <Label>{LabelText}</Label>
         <Title>{TitleText} </Title>

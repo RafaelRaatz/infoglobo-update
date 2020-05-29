@@ -1,13 +1,14 @@
 import React from "react";
 import GlobalStyle from "../../styles/global";
+import { Link } from "react-router-dom";
 
-import Header from "./components/header";
-import LargeNews from "./components/largeNews";
+import Header from "../../components/header";
+import LargeNews from "../../components/largeNews";
 import MediumNews from "./components/mediumNews";
 import SmallNews from "./components/smallNews";
-import Advertising from "./components/advertising";
-import Footer from "./components/footer";
-import SectionTitle from "./components/sectionTitle";
+import Advertising from "../../components/advertising";
+import Footer from "../../components/footer";
+import SectionTitle from "../../components/sectionTitle";
 
 import {
   Container,
@@ -37,6 +38,13 @@ import fifthNewsfirstThumb from "../../media/noticia-14.jpeg";
 import fifthNewsSecondThumb from "../../media/noticia-15.jpeg";
 import fifthNewsThirdThumb from "../../media/noticia-16.jpeg";
 import fifthNewsFourthThumb from "../../media/noticia-17.jpeg";
+
+import gamesNewsfirstThumb from "../../media/assassins.jpg";
+import gamesNewsSecondThumb from "../../media/uncharted.jpg";
+import gamesNewsThirdThumb from "../../media/zelda.jpg";
+import gamesNewsFourthThumb from "../../media/pubg.jpg";
+import gamesNewsFifthThumb from "../../media/god-of-war.jpg";
+import gamesNewssixthThumb from "../../media/mario1.jpg";
 
 const Home = () => {
   return (
@@ -186,6 +194,63 @@ const Home = () => {
               LabelText="Eco"
               TitleText="Arvores e suas ultilidades"
               Description="Arvores não servem apenas para subir nelas, mas tambem servem para tapar o sol #ficadica."
+            />
+          </SmallNewsContainer>
+        </Container>
+
+        <Container>
+          <Link to="/gamesnews">
+            {" "}
+            <SectionTitle text="Games News" />{" "}
+          </Link>
+        </Container>
+
+        <Container>
+          <LargeNewsContainer>
+            <LargeNews
+              Img={gamesNewsFifthThumb}
+              LabelText="Games"
+              TitleText="God of war é um jogo para todos ?"
+              DescriptionText="O deus do olimpo esta de volta agora na mitologia nórdica."
+            />
+
+            <LargeNews
+              Img={gamesNewssixthThumb}
+              LabelText="Games"
+              TitleText="Mario Kart já é moda!"
+              DescriptionText="O game de corrida da nintendo fixou seu nome nos mais vendidos do mês novamente."
+            />
+          </LargeNewsContainer>
+        </Container>
+
+        <Container>
+          <SmallNewsContainer>
+            <SmallNews
+              Img={gamesNewsfirstThumb}
+              LabelText="Aventura/RPG"
+              TitleText="Asssassin's Creed Odyssey"
+              Description="O melhor game da franquia desde o final da saga de Ezio Auditore."
+            />
+
+            <SmallNews
+              Img={gamesNewsSecondThumb}
+              LabelText="Ação"
+              TitleText="Uncharted 4"
+              Description="O game que leva o final perfeito para a história de Nathan Drake. "
+            />
+
+            <SmallNews
+              Img={gamesNewsThirdThumb}
+              LabelText="Aventura"
+              TitleText="Majora's mask remaster"
+              Description="O famoso jogo dark da franquia recebeu um remaster para o portatil da nintendo "
+            />
+
+            <SmallNews
+              Img={gamesNewsFourthThumb}
+              LabelText="Shooter"
+              TitleText="PUBG em queda ?"
+              Description="Pubg ainda reina no PC, embora o numero de players tenha caido consideravelmente."
             />
           </SmallNewsContainer>
         </Container>

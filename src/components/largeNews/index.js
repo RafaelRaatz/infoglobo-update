@@ -9,11 +9,11 @@ import {
   Text,
 } from "./styles";
 
-const FirstNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
+const LargeNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
   return (
     <Article>
       <Thumb>
-        <img src={Img} alt="" />
+        <img src={Img} width="464" height="261" alt="" />
         <Overlay></Overlay>
       </Thumb>
 
@@ -26,4 +26,4 @@ const FirstNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
   );
 };
 
-export default FirstNews;
+export default LargeNews;

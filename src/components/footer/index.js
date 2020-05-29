@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, ImgFooter, TextFooter } from "./styles";
 
-import logoFooter from "../../../../media/logo-footer.png";
+import logoFooter from "../../media/logo-footer.png";
 
 const Footer = () => {
   return (
