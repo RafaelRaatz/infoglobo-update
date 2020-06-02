@@ -9,10 +9,6 @@ import SectionTitle from "../../components/sectionTitle";
 import Advertising from "../../components/advertising";
 
 import { Container, Main, LargeNewsContainer } from "./styles";
-import LargeFirstThumb from "../../media/assassins.jpg";
-import LargeSecondThumb from "../../media/uncharted.jpg";
-import LargeThirdThumb from "../../media/fifa-20.png";
-import LargeFourthThumb from "../../media/pubg.jpg";
 
 const GamesNews = () => {
   return (
@@ -23,14 +19,14 @@ const GamesNews = () => {
         <Container>
           <LargeNewsContainer>
             <MediumNews
-              Img={LargeThirdThumb}
+              Img={require("../../media/fifa-20.png")}
               LabelText="esportes"
               TitleText="Fifa mais do mesmo ?"
               DescriptionText="Fifa 20 leva a melhor no PS4 e Xbox-one entre games de esporte."
             />
 
             <MediumNews
-              Img={LargeFourthThumb}
+              Img={require("../../media/pubg.jpg")}
               LabelText="Shooter"
               TitleText="PUBG em queda ?"
               DescriptionText="Pubg ainda reina no PC, embora o numero de players tenha caido consideravelmente."
@@ -57,7 +53,7 @@ const GamesNews = () => {
         <Container>
           <LargeNewsContainer>
             <MediumNews
-              Img={LargeFirstThumb}
+              Img={require("../../media/assassins.jpg")}
               LabelText="Aventura"
               TitleText="Asssassin's Creed Odyssey "
               DescriptionText="Assassin's Creed Odyssey é, tranquilamente, o melhor game da franquia desde o final
@@ -65,7 +61,7 @@ const GamesNews = () => {
             />
 
             <MediumNews
-              Img={LargeSecondThumb}
+              Img={require("../../media/uncharted.jpg")}
               LabelText="Ação"
               TitleText="Uncharted 4"
               DescriptionText="Positivamente diferente de seus bons antecessores, Uncharted 4 leva o final perfeito para a história

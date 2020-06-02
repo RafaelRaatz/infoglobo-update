@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../media/logo.png";
 import { Container } from "./styles";
 
 const Header = () => {
@@ -8,7 +7,7 @@ const Header = () => {
     <Container>
       <Link to="/">
         {" "}
-        <img src={logo} alt="" />{" "}
+        <img src={require("../../media/logo.png")} alt="" />{" "}
       </Link>
     </Container>
   );

@@ -1,14 +1,12 @@
 import React from "react";
 import { Container, ImgFooter, TextFooter } from "./styles";
 
-import logoFooter from "../../media/logo-footer.png";
-
 const Footer = () => {
   return (
     <Container>
       <ImgFooter>
         {" "}
-        <img src={logoFooter} alt="" />{" "}
+        <img src={require("../../media/logo-footer.png")} alt="" />{" "}
       </ImgFooter>
 
       <TextFooter>
