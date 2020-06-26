@@ -9,21 +9,21 @@ import {
   Text,
 } from "./styles";
 
-const HomeLargeNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
+const homeLargeNews = ({ img, labelText, titleText, descriptionText }) => {
   return (
     <Article>
       <Thumb>
-        <img src={Img} width="464" height="261" alt="" />
+        <img src={img} width="464" height="261" alt="" />
         <Overlay></Overlay>
       </Thumb>
 
       <Description>
-        <Label>{LabelText}</Label>
-        <Title>{TitleText}</Title>
-        <Text>{DescriptionText}</Text>
+        <Label>{labelText}</Label>
+        <Title>{titleText}</Title>
+        <Text>{descriptionText}</Text>
       </Description>
     </Article>
   );
 };
 
-export default HomeLargeNews;
+export default homeLargeNews;

@@ -1,18 +1,18 @@
 {
-  "LargeNews": [
+  "largeNews": [
     {
       "id": 1,
-      "Image": "./media/noticia-1.jpeg",
-      "Label": "esportes",
-      "Title": "Beisebol é um esporte para todos ?",
-      "Description": "Todo mundo sabe que futebol é muito melhor, mas estudos dizem que o beisebol é o pior."
+      "image": "./media/noticia-1.jpeg",
+      "label": "esportes",
+      "title": "Beisebol é um esporte para todos ?",
+      "description": "Todo mundo sabe que futebol é muito melhor, mas estudos dizem que o beisebol é o pior."
     },
     {
       "id": 2,
-      "Image": "./media/noticia-2.jpeg",
-      "Label": "esportes",
-      "Title": "Desfile de moda já é moda",
-      "Description": "Desfiles são tendencia na moda, palmeiras adota o novo costume em seu time."
+      "image": "./media/noticia-2.jpeg",
+      "label": "esportes",
+      "title": "Desfile de moda já é moda",
+      "description": "Desfiles são tendencia na moda, palmeiras adota o novo costume em seu time."
     }
   ]
 }

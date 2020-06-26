@@ -1,15 +1,15 @@
 import React from "react";
 import { Article, Description, Label, Title, SmallText } from "./styles";
 
-const MediumNews = ({ Img, LabelText, TitleText, Text }) => {
+const MediumNews = ({ img, labelText, titleText, text }) => {
   return (
     <Article>
-      <img src={Img} alt="" />
+      <img src={img} alt="" />
 
       <Description>
-        <Label>{LabelText}</Label>
-        <Title>{TitleText} </Title>
-        <SmallText>{Text} </SmallText>
+        <Label>{labelText}</Label>
+        <Title>{titleText} </Title>
+        <SmallText>{text} </SmallText>
       </Description>
     </Article>
   );
