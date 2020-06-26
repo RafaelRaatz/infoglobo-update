@@ -9,7 +9,7 @@ import {
   Text,
 } from "./styles";
 
-const LargeNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
+const HomeLargeNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
   return (
     <Article>
       <Thumb>
@@ -26,4 +26,4 @@ const LargeNews = ({ Img, LabelText, TitleText, DescriptionText }) => {
   );
 };
 
-export default LargeNews;
+export default HomeLargeNews;

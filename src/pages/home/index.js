@@ -3,7 +3,7 @@ import GlobalStyle from "../../styles/global";
 import { Link } from "react-router-dom";
 
 import Header from "../../components/header";
-import LargeNews from "../../components/largeNews";
+import HomeLargeNews from "../../components/largeNews";
 import MediumNews from "./components/mediumNews";
 import SmallNews from "./components/smallNews";
 import Advertising from "../../components/advertising";
@@ -22,13 +22,13 @@ import {
 const Home = () => {
   const [LargeNews, setNews] = useState([]);
 
+  useEffect(() => {
+    getNews();
+  }, []);
+
   const getNews = async () => {
     const { data } = await api.get("/news");
     setNews(data);
-
-    useEffect(() => {
-      getNews();
-    }, []);
   };
 
   return (
@@ -37,16 +37,18 @@ const Home = () => {
 
       <Main>
         <Container>
-          {LargeNews.map((LargeNews) => {
-            return (
-              <LargeNewsContainer
-                Img={require(`${LargeNews.image}`)}
-                LabelText={LargeNews.Label}
-                TitleText={LargeNews.Title}
-                DescriptionText={LargeNews.Description}
-              />
-            );
-          })}
+          <LargeNewsContainer>
+            {LargeNews.map((LargeNews) => {
+              return (
+                <HomeLargeNews
+                  Img={require(`${LargeNews.image}`)}
+                  LabelText={LargeNews.Label}
+                  TitleText={LargeNews.Title}
+                  DescriptionText={LargeNews.Description}
+                />
+              );
+            })}
+          </LargeNewsContainer>
         </Container>
 
         <Container>
