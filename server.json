@@ -2,14 +2,14 @@
   "largeNews": [
     {
       "id": 1,
-      "image": "./media/noticia-1.jpeg",
+      "image": "noticia-1.jpeg",
       "label": "esportes",
       "title": "Beisebol é um esporte para todos ?",
       "description": "Todo mundo sabe que futebol é muito melhor, mas estudos dizem que o beisebol é o pior."
     },
     {
       "id": 2,
-      "image": "./media/noticia-2.jpeg",
+      "image": "noticia-2.jpeg",
       "label": "esportes",
       "title": "Desfile de moda já é moda",
       "description": "Desfiles são tendencia na moda, palmeiras adota o novo costume em seu time."

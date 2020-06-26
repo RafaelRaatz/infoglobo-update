@@ -27,7 +27,7 @@ const Home = () => {
   }, []);
 
   const getNews = async () => {
-    const { data } = await api.get("/news");
+    const { data } = await api.get("/largeNews");
     setNews(data);
   };
 
@@ -38,13 +38,13 @@ const Home = () => {
       <Main>
         <Container>
           <LargeNewsContainer>
-            {largeNews.map((LargeNews) => {
+            {largeNews.map((item) => {
               return (
                 <HomeLargeNews
-                  img={require(`${LargeNews.image}`)}
-                  labelText={LargeNews.label}
-                  titleText={LargeNews.title}
-                  descriptionText={LargeNews.description}
+                  img={require(`../../media/${item.image}`)}
+                  labelText={item.label}
+                  titleText={item.title}
+                  descriptionText={item.description}
                 />
               );
             })}
