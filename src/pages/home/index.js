@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import GlobalStyle from "../../styles/global";
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,7 @@ import SmallNews from "./components/smallNews";
 import Advertising from "../../components/advertising";
 import Footer from "../../components/footer";
 import SectionTitle from "../../components/sectionTitle";
+import api from "../../services/api";
 
 import {
   Container,
@@ -19,27 +20,33 @@ import {
 } from "./styles";
 
 const Home = () => {
+  const [LargeNews, setNews] = useState([]);
+
+  const getNews = async () => {
+    const { data } = await api.get("/news");
+    setNews(data);
+
+    useEffect(() => {
+      getNews();
+    }, []);
+  };
+
   return (
     <div>
       <Header />
 
       <Main>
         <Container>
-          <LargeNewsContainer>
-            <LargeNews
-              Img={require("../../media/noticia-1.jpeg")}
-              LabelText="esportes"
-              TitleText="Beisebol é um esporte para todos ?"
-              DescriptionText="Todo mundo sabe que futebol é muito melhor, mas estudos dizem que o beisebol é o pior."
-            />
-
-            <LargeNews
-              Img={require("../../media/noticia-2.jpeg")}
-              LabelText="esportes"
-              TitleText="Desfile de moda já é moda"
-              DescriptionText="Desfiles são tendencia na moda, palmeiras adota o novo costume em seu time."
-            />
-          </LargeNewsContainer>
+          {LargeNews.map((LargeNews) => {
+            return (
+              <LargeNewsContainer
+                Img={require(`${LargeNews.image}`)}
+                LabelText={LargeNews.Label}
+                TitleText={LargeNews.Title}
+                DescriptionText={LargeNews.Description}
+              />
+            );
+          })}
         </Container>
 
         <Container>
