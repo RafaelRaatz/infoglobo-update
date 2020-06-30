@@ -22,6 +22,8 @@ import {
 const Home = () => {
   const [largeNews, setNews] = useState([]);
 
+  const [mediumNews, setMediumNews] = useState([]);
+
   useEffect(() => {
     getNews();
   }, []);
@@ -29,6 +31,9 @@ const Home = () => {
   const getNews = async () => {
     const { data } = await api.get("/largeNews");
     setNews(data);
+
+    const { dataNews } = await api.get("/mediumNews");
+    setMediumNews(dataNews);
   };
 
   return (
@@ -53,21 +58,16 @@ const Home = () => {
 
         <Container>
           <MediumNewsContainer>
-            <MediumNews
-              img={require("../../media/noticia-3.jpeg")}
-              labelText="Moda"
-              titleText="Gravatas não são mais apenas adereços "
-              text="O mundo sempre acorda com uma novidade e dessa vez as
-              gravatas chegam pra dominar o verão."
-            />
-
-            <MediumNews
-              img={require("../../media/noticia-4.jpeg")}
-              labelText="Influencer"
-              titleText="Fotos em janelas agora tem mais likes"
-              text="Instagram parou com a nova onda de fotos em janelas,
-              veja dicas de como tirar a sua foto."
-            />
+            {mediumNews.map((item) => {
+              return (
+                <MediumNews
+                  img={require(`../../media/${item.image}`)}
+                  labelText={item.label}
+                  titleText={item.title}
+                  descriptionText={item.description}
+                />
+              );
+            })}
           </MediumNewsContainer>
         </Container>
 

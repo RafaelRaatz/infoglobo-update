@@ -14,5 +14,21 @@
       "title": "Desfile de moda já é moda",
       "description": "Desfiles são tendencia na moda, palmeiras adota o novo costume em seu time."
     }
+  ],
+  "mediumNews": [
+    {
+      "id": 3,
+      "image": "noticia-3.jpeg",
+      "label": "Moda",
+      "title": "Gravatas não são mais apenas adereços ",
+      "description": "O mundo sempre acorda com uma novidade e dessa vez as gravatas chegam pra dominar o verão."
+    },
+    {
+      "id": 4,
+      "image": "noticia-4.jpeg",
+      "label": "Influencer",
+      "title": "Fotos em janelas agora tem mais likes",
+      "description": "Instagram parou com a nova onda de fotos em janelas, veja dicas de como tirar a sua foto."
+    }
   ]
 }
