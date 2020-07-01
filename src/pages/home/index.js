@@ -24,16 +24,35 @@ const Home = () => {
 
   const [mediumNews, setMediumNews] = useState([]);
 
+  const [smallNews, setSmallNews] = useState([]);
+
+  const [secondSmallNews, setSecondSmallNews] = useState([]);
+
   useEffect(() => {
-    getNews();
+    getLargeNews();
+    getMediumNews();
+    getSmallNews();
+    getSecondSmallNews();
   }, []);
 
-  const getNews = async () => {
+  const getLargeNews = async () => {
     const { data } = await api.get("/largeNews");
     setNews(data);
+  };
 
-    const { dataNews } = await api.get("/mediumNews");
-    setMediumNews(dataNews);
+  const getMediumNews = async () => {
+    const { data } = await api.get("/mediumNews");
+    setMediumNews(data);
+  };
+
+  const getSmallNews = async () => {
+    const { data } = await api.get("/smallNews");
+    setSmallNews(data);
+  };
+
+  const getSecondSmallNews = async () => {
+    const { data } = await api.get("/secondSmallNews");
+    setSecondSmallNews(data);
   };
 
   return (
@@ -64,7 +83,7 @@ const Home = () => {
                   img={require(`../../media/${item.image}`)}
                   labelText={item.label}
                   titleText={item.title}
-                  descriptionText={item.description}
+                  text={item.description}
                 />
               );
             })}
@@ -73,33 +92,16 @@ const Home = () => {
 
         <Container>
           <SmallNewsContainer>
-            <SmallNews
-              img={require("../../media/noticia-5.jpeg")}
-              labelText="Influencer"
-              titleText="Jbo x Leda"
-              description=" Qual a melhor escola da região de itapecerica da serra de sua opinião."
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-6.jpeg")}
-              labelText="Esporte"
-              titleText="Corridas velozes"
-              description=" O esporte que mais cresceu no ano foi a corrida, o grande responsavel foi o jogador Mbappe."
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-8.jpeg")}
-              labelText="Globo rural"
-              titleText="Porco não tem mundial"
-              description="Porco não leva a melhor no japão e acaba ficando em segundo."
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-9.jpeg")}
-              labelText="Eco"
-              titleText="Plantas carnivoras"
-              description="A nova moda agora são plantas vegetarianas, movimento 2020."
-            />
+            {smallNews.map((item) => {
+              return (
+                <SmallNews
+                  img={require(`../../media/${item.image}`)}
+                  labelText={item.label}
+                  titleText={item.title}
+                  description={item.description}
+                />
+              );
+            })}
           </SmallNewsContainer>
         </Container>
       </Main>
@@ -113,33 +115,16 @@ const Home = () => {
 
         <Container>
           <SmallNewsContainer>
-            <SmallNews
-              img={require("../../media/noticia-10.jpeg")}
-              labelText="Entreterimento"
-              titleText="Perdas e mais perdas"
-              description=" A cidade de São Paulo esta entre as cidades que as pessoas mais perdem objetos na rua."
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-11.jpeg")}
-              labelText="Games"
-              titleText="Harvest Moon"
-              description="O jogo Harvest Moon ensina como seu outono pode ser melhor plantando batatas doce."
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-12.jpeg")}
-              labelText="Natureza"
-              titleText="Peruibe e suas rochas"
-              description="As rochas de peruibe são as mais perigosas do mundo diz pesquisa feita pela professora Maria Helena."
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-13.jpeg")}
-              labelText="Games"
-              titleText="Cenarios de God of war"
-              description="Nessa ultima terça os cenarios do game God of War viraram alvo de turistas de todo mundo."
-            />
+            {secondSmallNews.map((item) => {
+              return (
+                <SmallNews
+                  img={require(`../../media/${item.image}`)}
+                  labelText={item.label}
+                  titleText={item.title}
+                  description={item.description}
+                />
+              );
+            })}
           </SmallNewsContainer>
         </Container>
 

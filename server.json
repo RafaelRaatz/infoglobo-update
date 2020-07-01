@@ -30,5 +30,66 @@
       "title": "Fotos em janelas agora tem mais likes",
       "description": "Instagram parou com a nova onda de fotos em janelas, veja dicas de como tirar a sua foto."
     }
+  ],
+  "smallNews": [
+    {
+      "id": 5,
+      "image": "noticia-5.jpeg",
+      "label": "Influencer",
+      "title": "Jbo x Leda",
+      "description": "Qual a melhor escola da região de itapecerica da serra de sua opinião."
+    },
+    {
+      "id": 6,
+      "image": "noticia-6.jpeg",
+      "label": "Influencer",
+      "title": "Fotos em janelas agora tem mais likes",
+      "description": "Instagram parou com a nova onda de fotos em janelas, veja dicas de como tirar a sua foto."
+    },
+    {
+      "id": 7,
+      "image": "noticia-8.jpeg",
+      "label": "Influencer",
+      "title": "Jbo x Leda",
+      "description": "Qual a melhor escola da região de itapecerica da serra de sua opinião."
+    },
+    {
+      "id": 8,
+      "image": "noticia-9.jpeg",
+      "label": "Influencer",
+      "title": "Fotos em janelas agora tem mais likes",
+      "description": "Instagram parou com a nova onda de fotos em janelas, veja dicas de como tirar a sua foto."
+    }
+  ],
+
+  "secondSmallNews": [
+    {
+      "id": 5,
+      "image": "noticia-10.jpeg",
+      "label": "Entreterimento",
+      "title": "Perdas e mais perdas",
+      "description": "A cidade de São Paulo esta entre as cidades que as pessoas mais perdem objetos na rua."
+    },
+    {
+      "id": 6,
+      "image": "noticia-11.jpeg",
+      "label": "Games",
+      "title": "Harvest Moon",
+      "description": "O jogo Harvest Moon ensina como seu outono pode ser melhor plantando batatas doce."
+    },
+    {
+      "id": 7,
+      "image": "noticia-12.jpeg",
+      "label": "Natureza",
+      "title": "Peruibe e suas rochas",
+      "description": "As rochas de peruibe são as mais perigosas do mundo diz pesquisa feita pela professora Maria Helena."
+    },
+    {
+      "id": 8,
+      "image": "noticia-13.jpeg",
+      "label": "Games",
+      "title": "Cenarios de God of war",
+      "description": "Nessa ultima terça os cenarios do game God of War viraram alvo de turistas de todo mundo."
+    }
   ]
 }
