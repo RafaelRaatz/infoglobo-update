@@ -26,13 +26,22 @@ const Home = () => {
 
   const [smallNews, setSmallNews] = useState([]);
 
-  const [secondSmallNews, setSecondSmallNews] = useState([]);
+  const [brazilNews, setBrazilNews] = useState([]);
+
+  const [worldNews, setWorldNews] = useState([]);
+
+  const [gamesNews, setGamesNews] = useState([]);
+
+  const [smallGamesNews, setSmallGamesNews] = useState([]);
 
   useEffect(() => {
     getLargeNews();
     getMediumNews();
     getSmallNews();
-    getSecondSmallNews();
+    getBrazilNews();
+    getWorldNews();
+    getGamesNews();
+    getSmallGamesNews();
   }, []);
 
   const getLargeNews = async () => {
@@ -50,9 +59,24 @@ const Home = () => {
     setSmallNews(data);
   };
 
-  const getSecondSmallNews = async () => {
-    const { data } = await api.get("/secondSmallNews");
-    setSecondSmallNews(data);
+  const getBrazilNews = async () => {
+    const { data } = await api.get("/brazilNews");
+    setBrazilNews(data);
+  };
+
+  const getWorldNews = async () => {
+    const { data } = await api.get("/worldNews");
+    setWorldNews(data);
+  };
+
+  const getGamesNews = async () => {
+    const { data } = await api.get("/gamesNews");
+    setGamesNews(data);
+  };
+
+  const getSmallGamesNews = async () => {
+    const { data } = await api.get("/smallGamesNews");
+    setSmallGamesNews(data);
   };
 
   return (
@@ -115,7 +139,7 @@ const Home = () => {
 
         <Container>
           <SmallNewsContainer>
-            {secondSmallNews.map((item) => {
+            {brazilNews.map((item) => {
               return (
                 <SmallNews
                   img={require(`../../media/${item.image}`)}
@@ -134,33 +158,16 @@ const Home = () => {
 
         <Container>
           <SmallNewsContainer>
-            <SmallNews
-              img={require("../../media/noticia-14.jpeg")}
-              labelText="Séries"
-              titleText="Game of Thrones"
-              description=" Game of Thrones ganha versão baby, veja como Tyrion ficou."
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-15.jpeg")}
-              labelText="Cinema"
-              titleText="Velozes e Furiosos"
-              description=" O novo filme da serie ganha nova temática e prédios tomam o lugar dos carros, arquitetos apoiam. "
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-16.jpeg")}
-              labelText="Eco"
-              titleText="Águas de lindóia"
-              description="quantas vezes se perguntou onde fica águas de lindóia ao beber sua garrafinha, descubra agora. "
-            />
-
-            <SmallNews
-              img={require("../../media/noticia-17.jpeg")}
-              labelText="Eco"
-              titleText="Arvores e suas ultilidades"
-              description="Arvores não servem apenas para subir nelas, mas tambem servem para tapar o sol #ficadica."
-            />
+            {worldNews.map((item) => {
+              return (
+                <SmallNews
+                  img={require(`../../media/${item.image}`)}
+                  labelText={item.label}
+                  titleText={item.title}
+                  description={item.description}
+                />
+              );
+            })}
           </SmallNewsContainer>
         </Container>
 
@@ -173,51 +180,31 @@ const Home = () => {
 
         <Container>
           <LargeNewsContainer>
-            <HomeLargeNews
-              img={require("../../media/god-of-war.jpg")}
-              labelText="Games"
-              titleText="God of war é um jogo para todos ?"
-              descriptionText="O deus do olimpo esta de volta agora na mitologia nórdica."
-            />
-
-            <HomeLargeNews
-              img={require("../../media/mario1.jpg")}
-              labelText="Games"
-              titleText="Mario Kart já é moda!"
-              descriptionText="O game de corrida da nintendo fixou seu nome nos mais vendidos do mês novamente."
-            />
+            {gamesNews.map((item) => {
+              return (
+                <HomeLargeNews
+                  img={require(`../../media/${item.image}`)}
+                  labelText={item.label}
+                  titleText={item.title}
+                  descriptionText={item.description}
+                />
+              );
+            })}
           </LargeNewsContainer>
         </Container>
 
         <Container>
           <SmallNewsContainer>
-            <SmallNews
-              img={require("../../media/assassins.jpg")}
-              labelText="Aventura/RPG"
-              titleText="Asssassin's Creed Odyssey"
-              description="O melhor game da franquia desde o final da saga de Ezio Auditore."
-            />
-
-            <SmallNews
-              img={require("../../media/uncharted.jpg")}
-              labelText="Ação"
-              titleText="Uncharted 4"
-              description="O game que leva o final perfeito para a história de Nathan Drake. "
-            />
-
-            <SmallNews
-              img={require("../../media/zelda.jpg")}
-              labelText="Aventura"
-              titleText="Majora's mask remaster"
-              description="O famoso jogo dark da franquia recebeu um remaster para o portatil da nintendo "
-            />
-
-            <SmallNews
-              img={require("../../media/pubg.jpg")}
-              labelText="Shooter"
-              titleText="PUBG em queda ?"
-              description="Pubg ainda reina no PC, embora o numero de players tenha caido consideravelmente."
-            />
+            {smallGamesNews.map((item) => {
+              return (
+                <SmallNews
+                  img={require(`../../media/${item.image}`)}
+                  labelText={item.label}
+                  titleText={item.title}
+                  description={item.description}
+                />
+              );
+            })}
           </SmallNewsContainer>
         </Container>
       </Main>

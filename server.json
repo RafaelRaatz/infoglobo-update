@@ -62,7 +62,7 @@
     }
   ],
 
-  "secondSmallNews": [
+  "brazilNews": [
     {
       "id": 5,
       "image": "noticia-10.jpeg",
@@ -90,6 +90,82 @@
       "label": "Games",
       "title": "Cenarios de God of war",
       "description": "Nessa ultima terça os cenarios do game God of War viraram alvo de turistas de todo mundo."
+    }
+  ],
+  "worldNews": [
+    {
+      "id": 9,
+      "image": "noticia-14.jpeg",
+      "label": "Séries",
+      "title": "Game of Thrones",
+      "description": " Game of Thrones ganha versão baby, veja como Tyrion ficou."
+    },
+    {
+      "id": 10,
+      "image": "noticia-15.jpeg",
+      "label": "Cinema",
+      "title": "Velozes e Furiosos",
+      "description": " O novo filme da serie ganha nova temática e prédios tomam o lugar dos carros, arquitetos apoiam. "
+    },
+    {
+      "id": 11,
+      "image": "noticia-12.jpeg",
+      "label": "Eco",
+      "title": "Águas de lindóia",
+      "description": "quantas vezes se perguntou onde fica águas de lindóia ao beber sua garrafinha, descubra agora. "
+    },
+    {
+      "id": 12,
+      "image": "noticia-13.jpeg",
+      "label": "Eco",
+      "title": "Arvores e suas ultilidades",
+      "description": "Arvores não servem apenas para subir nelas, mas tambem servem para tapar o sol #ficadica."
+    }
+  ],
+  "gamesNews": [
+    {
+      "id": 13,
+      "image": "god-of-war.jpg",
+      "label": "esportes",
+      "title": "God of war é um jogo para todos ?",
+      "description": "O deus do olimpo esta de volta agora na mitologia nórdica."
+    },
+    {
+      "id": 14,
+      "image": "mario1.jpg",
+      "label": "Games",
+      "title": "Mario Kart já é moda!",
+      "description": "O game de corrida da nintendo fixou seu nome nos mais vendidos do mês novamente."
+    }
+  ],
+  "smallGamesNews": [
+    {
+      "id": 15,
+      "image": "assassins.jpg",
+      "label": "Aventura/RPG",
+      "title": "Asssassin's Creed Odyssey",
+      "description": "O melhor game da franquia desde o final da saga de Ezio Auditore."
+    },
+    {
+      "id": 16,
+      "image": "uncharted.jpg",
+      "label": "Ação",
+      "title": "Uncharted 4",
+      "description": " O novo filme da serie ganha nova temática e prédios tomam o lugar dos carros, arquitetos apoiam. "
+    },
+    {
+      "id": 17,
+      "image": "zelda.jpg",
+      "label": "Aventura",
+      "title": "Majora's mask remaster",
+      "description": "O famoso jogo dark da franquia recebeu um remaster para o portatil da nintendo "
+    },
+    {
+      "id": 18,
+      "image": "pubg.jpg",
+      "label": "Shooter",
+      "title": "PUBG em queda ?",
+      "description": "Pubg ainda reina no PC, embora o numero de players tenha caido consideravelmente."
     }
   ]
 }
