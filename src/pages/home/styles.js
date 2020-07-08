@@ -8,21 +8,3 @@ export const Container = styled.div`
 export const Main = styled.main`
   margin-top: 15px;
 `;
-
-export const LargeNewsContainer = styled.div`
-  margin-bottom: 32px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const MediumNewsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 32px;
-`;
-
-export const SmallNewsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
