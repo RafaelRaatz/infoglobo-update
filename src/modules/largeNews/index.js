@@ -12,7 +12,7 @@ export const LargeNewsContainer = styled.div`
   justify-content: space-between;
 `;
 
-const LargeNewsBox = () => {
+export const LargeNewsBox = () => {
   const [largeNews, setNews] = useState([]);
 
   useEffect(() => {
@@ -39,5 +39,3 @@ const LargeNewsBox = () => {
     </LargeNewsContainer>
   );
 };
-
-export default LargeNewsBox;

@@ -10,7 +10,7 @@ export const SmallNewsContainer = styled.div`
   justify-content: space-between;
 `;
 
-const BrazilNewsBox = () => {
+export const BrazilNewsBox = () => {
   const [brazilNews, setBrazilNews] = useState([]);
 
   useEffect(() => {
@@ -37,5 +37,3 @@ const BrazilNewsBox = () => {
     </SmallNewsContainer>
   );
 };
-
-export default BrazilNewsBox;

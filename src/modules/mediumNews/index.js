@@ -11,7 +11,7 @@ export const MediumNewsContainer = styled.div`
   margin-bottom: 32px;
 `;
 
-const MediumNewsBox = () => {
+export const MediumNewsBox = () => {
   const [mediumNews, setMediumNews] = useState([]);
 
   useEffect(() => {
@@ -38,5 +38,3 @@ const MediumNewsBox = () => {
     </MediumNewsContainer>
   );
 };
-
-export default MediumNewsBox;

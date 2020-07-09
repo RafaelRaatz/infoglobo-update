@@ -12,7 +12,7 @@ export const LargeNewsContainer = styled.div`
   justify-content: space-between;
 `;
 
-const GamesNewsBox = () => {
+export const GamesNewsBox = () => {
   const [gamesNews, setGamesNews] = useState([]);
 
   useEffect(() => {
@@ -39,5 +39,3 @@ const GamesNewsBox = () => {
     </LargeNewsContainer>
   );
 };
-
-export default GamesNewsBox;
