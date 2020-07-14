@@ -1,23 +1,8 @@
-import React from 'react';
-import '../../global.css'
-import { Title, FinalTitle } from "../../styles"
+import React from "react";
+import { Title } from "./styles";
 
-
-const SectionTitle = ({ text, text2 }) => {
-    return (
-
-        <div className="container">
-            <div >
-                <Title>{text}</Title>
-                <FinalTitle>{text2}</FinalTitle>
-
-            </div>
-        </div>
-
-
-
-    );
-}
+const SectionTitle = ({ text }) => {
+  return <Title>{text}</Title>;
+};
 
 export default SectionTitle;
-

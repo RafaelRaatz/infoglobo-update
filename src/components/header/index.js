@@ -1,21 +1,16 @@
-import React from 'react';
-import './style.css';
-import logo from '../../media/logo.png'
-import '../../global.css'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { Container } from "./styles";
 
 const Header = () => {
-    return (
-
-        <header>
-
-            <div className="container">
-                <img src={logo} alt="" />
-
-            </div>
-        </header>
-
-    );
-}
+  return (
+    <Container>
+      <Link to="/">
+        {" "}
+        <img src={require("../../media/logo.png")} alt="" />{" "}
+      </Link>
+    </Container>
+  );
+};
 
 export default Header;

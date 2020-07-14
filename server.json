@@ -1,0 +1,171 @@
+{
+  "largeNews": [
+    {
+      "id": 1,
+      "image": "noticia-1.jpeg",
+      "label": "esportes",
+      "title": "Beisebol é um esporte para todos ?",
+      "description": "Todo mundo sabe que futebol é muito melhor, mas estudos dizem que o beisebol é o pior."
+    },
+    {
+      "id": 2,
+      "image": "noticia-2.jpeg",
+      "label": "esportes",
+      "title": "Desfile de moda já é moda",
+      "description": "Desfiles são tendencia na moda, palmeiras adota o novo costume em seu time."
+    }
+  ],
+  "mediumNews": [
+    {
+      "id": 3,
+      "image": "noticia-3.jpeg",
+      "label": "Moda",
+      "title": "Gravatas não são mais apenas adereços ",
+      "description": "O mundo sempre acorda com uma novidade e dessa vez as gravatas chegam pra dominar o verão."
+    },
+    {
+      "id": 4,
+      "image": "noticia-4.jpeg",
+      "label": "Influencer",
+      "title": "Fotos em janelas agora tem mais likes",
+      "description": "Instagram parou com a nova onda de fotos em janelas, veja dicas de como tirar a sua foto."
+    }
+  ],
+  "smallNews": [
+    {
+      "id": 5,
+      "image": "noticia-5.jpeg",
+      "label": "Influencer",
+      "title": "Jbo x Leda",
+      "description": "Qual a melhor escola da região de itapecerica da serra de sua opinião."
+    },
+    {
+      "id": 6,
+      "image": "noticia-6.jpeg",
+      "label": "Influencer",
+      "title": "Fotos em janelas agora tem mais likes",
+      "description": "Instagram parou com a nova onda de fotos em janelas, veja dicas de como tirar a sua foto."
+    },
+    {
+      "id": 7,
+      "image": "noticia-8.jpeg",
+      "label": "Influencer",
+      "title": "Jbo x Leda",
+      "description": "Qual a melhor escola da região de itapecerica da serra de sua opinião."
+    },
+    {
+      "id": 8,
+      "image": "noticia-9.jpeg",
+      "label": "Influencer",
+      "title": "Fotos em janelas agora tem mais likes",
+      "description": "Instagram parou com a nova onda de fotos em janelas, veja dicas de como tirar a sua foto."
+    }
+  ],
+
+  "brazilNews": [
+    {
+      "id": 5,
+      "image": "noticia-10.jpeg",
+      "label": "Entreterimento",
+      "title": "Perdas e mais perdas",
+      "description": "A cidade de São Paulo esta entre as cidades que as pessoas mais perdem objetos na rua."
+    },
+    {
+      "id": 6,
+      "image": "noticia-11.jpeg",
+      "label": "Games",
+      "title": "Harvest Moon",
+      "description": "O jogo Harvest Moon ensina como seu outono pode ser melhor plantando batatas doce."
+    },
+    {
+      "id": 7,
+      "image": "noticia-12.jpeg",
+      "label": "Natureza",
+      "title": "Peruibe e suas rochas",
+      "description": "As rochas de peruibe são as mais perigosas do mundo diz pesquisa feita pela professora Maria Helena."
+    },
+    {
+      "id": 8,
+      "image": "noticia-13.jpeg",
+      "label": "Games",
+      "title": "Cenarios de God of war",
+      "description": "Nessa ultima terça os cenarios do game God of War viraram alvo de turistas de todo mundo."
+    }
+  ],
+  "worldNews": [
+    {
+      "id": 9,
+      "image": "noticia-14.jpeg",
+      "label": "Séries",
+      "title": "Game of Thrones",
+      "description": " Game of Thrones ganha versão baby, veja como Tyrion ficou."
+    },
+    {
+      "id": 10,
+      "image": "noticia-15.jpeg",
+      "label": "Cinema",
+      "title": "Velozes e Furiosos",
+      "description": " O novo filme da serie ganha nova temática e prédios tomam o lugar dos carros, arquitetos apoiam. "
+    },
+    {
+      "id": 11,
+      "image": "noticia-16.jpeg",
+      "label": "Eco",
+      "title": "Águas de lindóia",
+      "description": "quantas vezes se perguntou onde fica águas de lindóia ao beber sua garrafinha, descubra agora. "
+    },
+    {
+      "id": 12,
+      "image": "noticia-17.jpeg",
+      "label": "Eco",
+      "title": "Arvores e suas ultilidades",
+      "description": "Arvores não servem apenas para subir nelas, mas tambem servem para tapar o sol #ficadica."
+    }
+  ],
+  "gamesNews": [
+    {
+      "id": 13,
+      "image": "god-of-war.jpg",
+      "label": "esportes",
+      "title": "God of war é um jogo para todos ?",
+      "description": "O deus do olimpo esta de volta agora na mitologia nórdica."
+    },
+    {
+      "id": 14,
+      "image": "mario1.jpg",
+      "label": "Games",
+      "title": "Mario Kart já é moda!",
+      "description": "O game de corrida da nintendo fixou seu nome nos mais vendidos do mês novamente."
+    }
+  ],
+  "smallGamesNews": [
+    {
+      "id": 15,
+      "image": "assassins.jpg",
+      "label": "Aventura/RPG",
+      "title": "Asssassin's Creed Odyssey",
+      "description": "O melhor game da franquia desde o final da saga de Ezio Auditore."
+    },
+    {
+      "id": 16,
+      "image": "uncharted.jpg",
+      "label": "Ação",
+      "title": "Uncharted 4",
+      "description": " O novo filme da serie ganha nova temática e prédios tomam o lugar dos carros, arquitetos apoiam. "
+    },
+    {
+      "id": 17,
+      "image": "zelda.jpg",
+      "label": "Aventura",
+      "title": "Majora's mask remaster",
+      "description": "O famoso jogo dark da franquia recebeu um remaster para o portatil da nintendo "
+    },
+    {
+      "id": 18,
+      "image": "pubg.jpg",
+      "label": "Shooter",
+      "title": "PUBG em queda ?",
+      "description": "Pubg ainda reina no PC, embora o numero de players tenha caido consideravelmente."
+    }
+  ]
+}

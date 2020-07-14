@@ -1,28 +1,29 @@
-import React from 'react';
-import './style.css';
-import '../../global.css'
+import React from "react";
+import {
+  Article,
+  Thumb,
+  Overlay,
+  Description,
+  Label,
+  Title,
+  Text,
+} from "./styles";
 
+const homeLargeNews = ({ img, labelText, titleText, descriptionText }) => {
+  return (
+    <Article>
+      <Thumb>
+        <img src={img} width="464" height="261" alt="" />
+        <Overlay></Overlay>
+      </Thumb>
 
+      <Description>
+        <Label>{labelText}</Label>
+        <Title>{titleText}</Title>
+        <Text>{descriptionText}</Text>
+      </Description>
+    </Article>
+  );
+};
 
-
-
-const FirstNews = ({ Img, Label, Title, Description }) => {
-    return (
-
-        <article>
-            <div className="thumb">
-                <img src={Img} alt="" />
-                <div className="overlay"></div>
-            </div>
-
-            <div className="largeNewsDescription">
-                <span className="label">{Label}</span>
-                <p className="title">{Title}</p>
-                <p className="description">{Description}</p>
-            </div>
-        </article>
-
-    );
-}
-
-export default FirstNews;
+export default homeLargeNews;

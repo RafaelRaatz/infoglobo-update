@@ -1,25 +1,15 @@
-import React from 'react';
-import './style.css';
-import '../../global.css'
-
-import advertising from '../../media/propaganda.png'
-
+import React from "react";
+import { Container, Advertise } from "./styles";
 
 const Advertising = () => {
-    return (
-
-        <div className="advertising">
-
-            <hr />
-
-            <img className="advertise" src={advertising} alt="" />
-
-            <hr />
-        </div>
-
-
-
-    );
-}
+  return (
+    <Container>
+      <Advertise>
+        {" "}
+        <img src={require("../../media/propaganda.png")} alt="" />{" "}
+      </Advertise>
+    </Container>
+  );
+};
 
 export default Advertising;

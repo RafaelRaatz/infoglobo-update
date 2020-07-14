@@ -3,12 +3,9 @@
   
 <h2 align="center">React<h2/>
 
-  
 ## Descrição
 
 - Site de notícias em ReactJS.
-
-
 
 ## Pré-Requisitos
 
@@ -17,6 +14,7 @@ Instalar o React.
 ## Procedimentos
 
 Rodar servidor usando :
-``` 
-npm start 
+
+```
+npm start
 ```
