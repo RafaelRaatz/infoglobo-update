@@ -7,7 +7,7 @@ const Header = () => {
     <Container>
       <Link to="/">
         {" "}
-        <img src={require("../../media/logo.png")} alt="" />{" "}
+        <img src={require("../../media/logo.png")} alt="Logo" />{" "}
       </Link>
     </Container>
   );
